@@ -42,7 +42,7 @@ main.py --- main execution file for MOBO algorithms
 
 ## Getting Started
 
-- Change the name of the project directory in *cosearch.py"
+- Download the pre-trained supernet of AttentiveNAS from [this link](https://drive.google.com/file/d/1cCla-OQNIAn-rjsY2b832DuP59ZKr8uh/view?usp=sharing) and put it in *problems/AttentiveNet/attentive_nas_data/*
 
 - Run the script file *script.sh*. The script can run the HW-NAS with one of the optimization algorithms (NSGA-II, DGEMO, USEMO-EI)
 
