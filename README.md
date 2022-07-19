@@ -3,8 +3,8 @@
 ## Overview
 
 This repository contains Python implementation of the algorithm framework for Hardware-aware Dynamic Neural Architecture Search with DVFS. The framework is built upon 
-1- DGEMO: Framework for Multi-objective Bayesian Optimization.
-2- Pymoo: Framework for Multi-objective Evolutionary Optimization.
+- DGEMO: Framework for Multi-objective Bayesian Optimization.
+- Pymoo: Framework for Multi-objective Evolutionary Optimization.
 
 
 ## Code Structure
