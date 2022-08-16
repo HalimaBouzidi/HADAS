@@ -1,9 +1,12 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
 import sys
+import numpy as np
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
+from torch.distributions import Categorical
 
 class AverageMeter(object):
     """Computes and stores the average and current value"""
@@ -50,7 +53,7 @@ class ProgressMeter(object):
 
 
 
-def accuracy(output, target, topk=(1,)):
+def accuracy(output, target, topk=(1,), per_sample=False):
     """Computes the accuracy over the k top predictions for the specified values of k"""
     with torch.no_grad():
         maxk = max(topk)
@@ -59,11 +62,24 @@ def accuracy(output, target, topk=(1,)):
         _, pred = output.topk(maxk, 1, True, True)
         pred = pred.t()
         correct = pred.eq(target.view(1, -1).expand_as(pred))
-
         res = []
         for k in topk:
             correct_k = correct[:k].reshape(-1).float().sum() #sum(0, keepdim=True)
             res.append(correct_k.mul_(100.0 / batch_size))
-        return res
+        if per_sample:
+            return res,correct
+        else:
+            return res
+
+def entropy(output):
+    """Estimates entropy of classification for each batch"""
+    #TODO figure out how to store the entropy values and how to get the image name
+    with torch.no_grad():
+        output = F.softmax(output) # to avoid NaN
+        if len(output.shape) == 1:
+            entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)))
+        else:
+            entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)), 1)
+        return entropy_mtx
 
 

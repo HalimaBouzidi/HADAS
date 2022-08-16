@@ -10,7 +10,7 @@ import torch.multiprocessing as mp
 import torch.utils.data
 import torch.utils.data.distributed
 
-from .utils.progress import AverageMeter, accuracy
+from .utils.progress import AverageMeter, accuracy, entropy
 
 def validate_one_subnet(
     val_loader,
@@ -25,17 +25,25 @@ def validate_one_subnet(
 
     subnet.cuda(args.gpu)
     subnet.eval() # freeze again all running stats
+
+    path_list = []
+    entropy_list = []
+    correct_list = []
    
-    for batch_idx, (images, target) in enumerate(val_loader):
+    for batch_idx, (images, target, path) in enumerate(val_loader):     
+    # path for CIFAR datasets is the index
+
         images = images.cuda(args.gpu, non_blocking=True)
         target = target.cuda(args.gpu, non_blocking=True)
 
         # compute output
         output = subnet(images)
+        batch_entropy = entropy(output)
+
         loss = criterion(output, target).item()
 
         # measure accuracy 
-        acc1, acc5 = accuracy(output, target, topk=(1, 5))
+        (acc1, acc5), correct = accuracy(output, target, topk=(1, 5), per_sample=True)
         
         batch_size = images.size(0)
         
@@ -51,5 +59,8 @@ def validate_one_subnet(
         top5.update(acc5, batch_size)
         losses.update(loss, batch_size)
 
-    return float(top1.avg), float(top5.avg), float(losses.avg)
+        entropy_list.extend(batch_entropy)
+        path_list.extend(path)
+        correct_list.extend(correct[0])     # Top 1
 
+    return float(top1.avg), float(top5.avg), float(losses.avg), path_list, entropy_list, correct_list

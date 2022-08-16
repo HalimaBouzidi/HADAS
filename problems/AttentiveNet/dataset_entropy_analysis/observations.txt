@@ -1,0 +1,13 @@
+8/15
+
+Script analyze_entropy_accuracy.py shows how the number of samples and their correct classification ratio are distibuted across uniform bins of entropy
+
+- On tiny-imagenet
+	Dividing entropies uniformly across a given number of bins
+	Higher entropy --> Less samples --> Less accuracy
+
+- I wonder if we should do it based on the classes themselves (based on how many samples belonging to class A are classified correctly)
+- I can look at how the images look in real life to qualitatively understand the underlying difficulty
+- How to determine the number of bins
+_________________
+
