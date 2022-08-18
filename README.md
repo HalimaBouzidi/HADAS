@@ -60,6 +60,17 @@ result/{problem}/{subfolder}/{algo}-{exp-name}/{seed}/
 - The name of the argument yaml file is `args.yml`.
 
 
+## Fine-tuning:
+    
+    
+| Subnet/weights | Cifar10 | Cifar-100 | Tiny-Imagenet | MFLOPs |
+|:---:|:---:|:---:|:---:|:---:|
+| Min_subnet_Acc | 97.99 | 86.28 | 76.73 | 201 |
+| Max_subnet_Acc | 98.58 | 88.43 | 80.54 | 1937 |
+| Link to Weights | [Link](https://drive.google.com/drive/folders/1IwvWd8oswS6YBGhu-32YHhXRKqFBnDaF?usp=sharing) | [Link](https://drive.google.com/drive/folders/1hcgG8Jcp_iiJR6ekjlNjdGm7ThEVw-bB?usp=sharing) | [Link](https://drive.google.com/drive/folders/1n3eeX7g8c-MUNWizda3LBZwC5qIN1aKb?usp=sharing) | - |
+
+
+
 ## References
 
 ```

@@ -27,7 +27,10 @@ def create_model(args, arch=None):
             bn_param = (bn_momentum, bn_eps),
         )
         # load from pretrained models
-        supernet.load_weights_from_pretrained_models(args.pareto_models.supernet_checkpoint_path)
+        try: 
+            supernet.load_weights_from_pretrained_models(args.pareto_models.supernet_checkpoint_path)
+        except RuntimeError:
+            print("Could not load the pretrained supernet")
 
         # subsample a static model with weights inherited from the supernet dynamic model
         supernet.set_active_subnet(
@@ -74,6 +77,3 @@ def create_model(args, arch=None):
         raise ValueError(arch)
 
     return model
-
-
-

@@ -72,7 +72,7 @@ if __name__ == '__main__':
     with torch.no_grad():
         criterion = nn.CrossEntropyLoss().cuda()
         from evaluate.imagenet_eval import validate_one_subnet
-        acc1, acc5, loss, flops, params = validate_one_subnet(val_loader, model, criterion, args)
-        print(acc1, acc5, flops, params)
+        acc1, acc5, loss = validate_one_subnet(val_loader, model, criterion, args)  # OD: flops,params were other return variables
+        print(acc1, acc5)#, flops, params)
 
 
