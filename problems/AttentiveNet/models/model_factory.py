@@ -42,6 +42,34 @@ def create_model(args, arch=None):
         # house-keeping stuff
         model.set_bn_param(momentum=bn_momentum, eps=bn_eps)
         del supernet
+
+    elif arch == 'attentive_nas_eex_model':
+        supernet = AttentiveNasDynamicModel(
+            args.supernet_config,
+            n_classes = n_classes, 
+            bn_param = (bn_momentum, bn_eps),
+        )
+        # load from pretrained models
+        supernet.load_weights_from_pretrained_models(args.pareto_models.supernet_checkpoint_path)
+
+        # subsample a static model with exit blocks and weights inherited from the supernet dynamic model
+        supernet.set_active_subnet(
+            resolution=args.active_subnet.resolution,
+            width = args.active_subnet.width,
+            depth = args.active_subnet.depth,
+            kernel_size = args.active_subnet.kernel_size,
+            expand_ratio = args.active_subnet.expand_ratio
+        )
+        
+        block_ee = args.block_ee
+        num_ee = args.num_ee
+
+        model = supernet.get_active_eex_subnet(block_ee, num_ee) 
+
+        # house-keeping stuff
+        model.set_bn_param(momentum=bn_momentum, eps=bn_eps)
+        del supernet
+
     else:
         raise ValueError(arch)
 

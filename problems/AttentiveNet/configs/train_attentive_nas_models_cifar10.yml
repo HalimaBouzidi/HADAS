@@ -4,7 +4,8 @@
 #### models ####
 arch: 'attentive_nas_dynamic_model'
 
-exp_name: "attentive_nas_dynamic_model_bestup3"
+supernet_checkpoint_path: "./attentive_nas_data/attentive_nas_pretrained.pth.tar"
+exp_name: "attentive_nas_dynamic_model_cifar10_1"
 
 batch_size_per_gpu: 32
 sandwich_rule: True
@@ -25,7 +26,7 @@ n_cpu_per_node: 32
 memory_per_node: '128g'
 
 warmup_epochs: 5
-epochs: 360
+epochs: 50
 start_epoch: 0
 
 label_smoothing: 0.1
@@ -73,10 +74,10 @@ dist_backend: 'nccl'
 distributed: True
 
 
-### imagenet dataset ###
-dataset: 'imagenet'
-dataset_dir: "/data/imagenet"
-n_classes: 1000
+### Cifar-10 dataset ###
+dataset: 'cifar-10'
+dataset_dir: "./datasets/cifar-10"
+n_classes: 1000 # this will be changed to "10" in the fine-tuning stage
 drop_last: True
 
 print_freq: 10
