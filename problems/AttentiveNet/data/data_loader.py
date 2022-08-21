@@ -185,7 +185,51 @@ def build_default_CIFAR10_data_loader(args):
     return train_loader, val_loader, train_sampler
 
 def build_default_CIFAR100_data_loader(args):
-    raise NotImplementedError
+    #build transforms
+    train_transform = get_data_transform(args, is_training=True, augment=args.augment)
+    test_transform = get_data_transform(args, is_training=False, augment=args.augment)
+
+    #build datasets    
+    train_dataset = datasets.CIFAR100(root=args.dataset_dir, train=True,
+                                        download=True, transform=train_transform)
+    val_dataset = datasets.CIFAR100(root=args.dataset_dir, train=False,
+                                        download=True, transform=test_transform)
+
+    #build data loaders
+    if args.distributed:
+        train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset)
+    else:
+        train_sampler = None
+
+    train_loader = torch.utils.data.DataLoader(
+        train_dataset,
+        batch_size=args.batch_size,
+        shuffle=(train_sampler is None),
+        sampler=train_sampler,
+        drop_last = getattr(args, 'drop_last', True),
+        num_workers=args.data_loader_workers_per_gpu,
+        pin_memory=True,
+    )
+
+    if args.distributed and getattr(args, 'distributed_val', True):
+        val_sampler = torch.utils.data.distributed.DistributedSampler(val_dataset)
+    else:
+        val_sampler = None
+
+    eval_batch_size = min(args.batch_size, 16) \
+        if not getattr(args, 'eval_only', False) else args.batch_size
+
+    val_loader = torch.utils.data.DataLoader(
+        val_dataset,
+        batch_size=eval_batch_size,
+        shuffle=False,
+        num_workers=args.data_loader_workers_per_gpu,
+        drop_last=False,
+        pin_memory=True,
+        sampler=val_sampler,
+    )
+
+    return train_loader, val_loader, train_sampler
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
 
