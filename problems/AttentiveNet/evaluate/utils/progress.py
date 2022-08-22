@@ -82,4 +82,44 @@ def entropy(output):
             entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)), 1)
         return entropy_mtx
 
+def accuracy_exits(output, target, topk=(1,), n_exits=1, per_sample=False):
+    """Computes the accuracy over the k top predictions for the specified values of k for all the exits"""
+    with torch.no_grad():
+        maxk = max(topk)
+        batch_size = target.size(0)
+        res_exits = []
+        correct_exits = []
 
+        for i in range(n_exits+1):
+            _, pred = output[i].topk(maxk, 1, True, True)
+            pred = pred.t()
+            correct = pred.eq(target.view(1, -1).expand_as(pred))
+            correct_exits.append(correct)
+            
+            res = []
+            for k in topk:
+                correct_k = correct[:k].reshape(-1).float().sum() #sum(0, keepdim=True)
+                res.append((correct_k.mul_(100.0 / batch_size)))
+            
+            res_exits.append(res)
+        
+        if per_sample:
+            return res_exits, correct_exits
+        else:
+            return res_exits
+
+
+def entropy_exits(outputs, n_exits):
+    """Estimates entropy of classification for each batch and for each exit"""
+    entropy_exits = []
+    with torch.no_grad():
+        for i in range(n_exits+1):
+            output = outputs[i]
+            output = F.softmax(output) # to avoid NaN
+            if len(output.shape) == 1:
+                entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)))
+                entropy_exits.append(entropy_mtx )
+            else:
+                entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)), 1)
+                entropy_exits.append(entropy_mtx )
+    return entropy_exits

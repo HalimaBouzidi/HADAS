@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
-import math
 
 from .modules.exit_block import ExitBlock
 from .modules.nn_base import MyNetwork
@@ -10,7 +9,7 @@ from .modules.nn_base import MyNetwork
 class AttentiveNasEExModel(MyNetwork):
 
     def __init__(self, first_conv, blocks, num_blocks, last_conv, classifier, confidence, resolution, 
-                        block_ee, num_ee, use_v3_head=True):
+                        block_ee, num_ee, threshold_ee, use_v3_head=True):
 
         
         super(AttentiveNasEExModel, self).__init__()
@@ -20,7 +19,7 @@ class AttentiveNasEExModel(MyNetwork):
         self.exits = nn.ModuleList()
         self.num_ee = num_ee
         self.block_ee = block_ee
-        self.exit_threshold = 0.5
+        self.exit_threshold = threshold_ee
         self.num_classes = classifier.out_features
 
         self.first_conv = first_conv
@@ -33,8 +32,8 @@ class AttentiveNasEExModel(MyNetwork):
 
         self.last_conv = last_conv
 
-        self.classifier = classifier
-        self.confidence = confidence
+        self.final_classifier = classifier
+        self.final_confidence = confidence
 
         self.stages.append(nn.Sequential(*self.layers))
 
@@ -58,8 +57,10 @@ class AttentiveNasEExModel(MyNetwork):
         for idx, exitblock in enumerate(self.exits):
             x = self.stages[idx](x)
             pred, conf = exitblock(x)
-            if not self.training and conf.item() > self.exit_threshold:
-                return pred, idx
+
+            #if not self.training and conf_mean > self.exit_threshold:
+            #    return pred, conf_mean, idx
+
             preds.append(pred)
             confs.append(conf)
 
@@ -70,16 +71,16 @@ class AttentiveNasEExModel(MyNetwork):
             x = x.mean(3, keepdim=True).mean(2, keepdim=True)  # global average pooling
 
         x = torch.squeeze(x)
-        pred = self.classifier(x)
-        conf = self.confidence(x)
+        pred = self.final_classifier(x)
+        conf = self.final_confidence(x)
 
-        if not self.training:
-            return pred, len(self.exits), 1.0
+        #if not self.training:
+        #    return pred, 1.0, len(self.exits)
 
         preds.append(pred)
         confs.append(conf)
 
-        return preds, confs
+        return preds, confs, len(self.exits)
 
         
     @property
@@ -131,4 +132,3 @@ class AttentiveNasEExModel(MyNetwork):
                 m.training = True
                 m.momentum = None # cumulative moving average
                 m.reset_running_stats()
-

@@ -363,7 +363,6 @@ class AttentiveNasDynamicModel(MyNetwork):
         return cfg
 
 
-    # Get Active subnet with weights inhereted from the supernet
     def get_active_subnet(self, preserve_weight=True):
         with torch.no_grad():
             first_conv = self.first_conv.get_active_subnet(3, preserve_weight)
@@ -404,8 +403,7 @@ class AttentiveNasDynamicModel(MyNetwork):
             _subnet.set_bn_param(**self.get_bn_param())
             return _subnet
 
-    # Get the active subnet with weights inhereted from the supernet and exit blocks
-    def get_active_eex_subnet(self, block_ee, num_ee, preserve_weight=True):
+    def get_active_eex_subnet(self, block_ee, num_ee, threshold_ee, preserve_weight=True):
         with torch.no_grad():
             first_conv = self.first_conv.get_active_subnet(3, preserve_weight)
 
@@ -441,7 +439,7 @@ class AttentiveNasDynamicModel(MyNetwork):
             confidence = nn.Sequential(nn.Linear(in_features, 1), nn.Sigmoid())
 
             _subnet = AttentiveNasEExModel(first_conv, blocks, len(blocks), last_conv, classifier, confidence, self.active_resolution, 
-                                           block_ee, num_ee, use_v3_head=self.use_v3_head)
+                                           block_ee, num_ee, threshold_ee, use_v3_head=self.use_v3_head)
 
             _subnet.set_bn_param(**self.get_bn_param())
             return _subnet
