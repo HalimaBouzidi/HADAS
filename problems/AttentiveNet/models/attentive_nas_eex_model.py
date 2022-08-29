@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
+import math
 
 from .modules.exit_block import ExitBlock
 from .modules.nn_base import MyNetwork

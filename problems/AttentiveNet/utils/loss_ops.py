@@ -12,8 +12,6 @@ class CrossEntropyLossSoft(torch.nn.modules.loss._Loss):
         cross_entropy_loss = -torch.bmm(target, output_log_prob)
         return cross_entropy_loss.mean()
 
-
-
 class KLLossSoft(torch.nn.modules.loss._Loss):
     """ inplace distillation for image classification 
             output: output logits of the student network
@@ -22,7 +20,7 @@ class KLLossSoft(torch.nn.modules.loss._Loss):
             KL(p||q) = Ep \log p - \Ep log q
     """
     def forward(self, output, soft_logits, target=None, temperature=1., alpha=0.9):
-        output, soft_logits = output / temperature, soft_logits / temperature
+        output, soft_logits = output / temperature, soft_logits / temperature # --> temperature scaling
         soft_target_prob = torch.nn.functional.softmax(soft_logits, dim=1)
         output_log_prob = torch.nn.functional.log_softmax(output, dim=1)
         kd_loss = -torch.sum(soft_target_prob * output_log_prob, dim=1)

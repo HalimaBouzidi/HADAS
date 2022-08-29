@@ -1,6 +1,14 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+
 import argparse
+import builtins
+import math
 import os
 import random
+import shutil
+import warnings
+import sys
+import operator
 
 import torch
 import torch.nn as nn
@@ -24,16 +32,19 @@ import numpy as np
 import joblib 
 
 parser = argparse.ArgumentParser(description='Exit-blocks Training')
-parser.add_argument('--config-file', default=None, type=str, 
-                    help='training configuration')
+parser.add_argument('--config-file', default=None, type=str, help='training configuration')
+parser.add_argument('--model', default='a0', type=str, help='model to evaluate')
+parser.add_argument('--gpu', default=0, type=int, help='gpu local rank')
 logger = logging.get_logger(__name__)
-
 
 def build_args_and_env(run_args):
 
     assert run_args.config_file and os.path.isfile(run_args.config_file), 'cannot locate config file'
     args = setup(run_args.config_file)
+    args.model = run_args.model
+    args.gpu = run_args.gpu
     args.config_file = run_args.config_file
+    args.exp_name = 'attentive_nas_model_'+args.model+'_'+args.dataset+'_exits'
     args.models_save_dir = os.path.join(args.models_save_dir, args.exp_name)
 
     if not os.path.exists(args.models_save_dir):
@@ -73,7 +84,7 @@ def main():
 
     # build model
     logger.info("=> creating model '{}'".format(args.arch))
-    args.__dict__['active_subnet'] = args.__dict__['pareto_models']['a0']
+    args.__dict__['active_subnet'] = args.__dict__['pareto_models'][args.model]
     n_exits = args.__dict__['active_subnet']['num_ee'] 
     model = models.model_factory.create_model(args)
 
@@ -98,7 +109,7 @@ def main():
     if args.loss == 'kl-div':
         criterion = loss_ops.CumulativeKLDivergenceExits().cuda(args.gpu)
     elif args.loss == 'nll':
-        criterion = loss_ops.CumulativeLossExits().cuda(args.gpu)
+        criterion = loss_ops.CumulativeNLLExits().cuda(args.gpu)
     else:
         raise NotImplementedError
 
@@ -175,11 +186,13 @@ def train_epoch(
         output, conf, exits = model(images)
         
         if args.loss == 'kl-div':
-            loss = criterion(output, output[exits], exits, None, 'mean') # for KL-divergenece
+            loss = criterion(output, exits, target, temperature=1.) # for KL-divergenece
         else:
-            loss = criterion(output, exits, target) #n for egative log likelihood loss
+            loss = criterion(output, exits, target) #n for negative log likelihood loss
 
         loss.backward()
+
+        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
 
         #accuracy measured on the current batch
@@ -231,3 +244,4 @@ def validate(
 
 if __name__ == '__main__':
     main()
+

@@ -1,9 +1,18 @@
 # Test script to obtain the entropy levels of the different data samples on multiple exits
 
 import argparse
+import builtins
+import math
+import os
 import random
+import shutil
+import time
+import sys
+import warnings
 import argparse
+from datetime import date
 import csv
+import numpy as np
 
 import torch
 import torch.nn as nn
@@ -25,7 +34,7 @@ from data.data_loader import build_data_loader
 from utils.progress import AverageMeter, ProgressMeter, accuracy
 
 parser = argparse.ArgumentParser(description='Test AttentiveNas Models')
-parser.add_argument('--config-file', default='./configs/eval_attentive_nas_exits.yml')
+parser.add_argument('--config-file', default='./configs/eval_attentive_nas_models.yml')
 parser.add_argument('--model', default='a0', type=str, choices=['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6'])
 parser.add_argument('--gpu', default=0, type=int, help='gpu id')
 
@@ -40,6 +49,7 @@ if __name__ == '__main__':
     torch.manual_seed(args.seed)
     torch.cuda.manual_seed(args.seed)
 
+    args.__dict__['pareto_models']['exits_checkpoint_path'] = '/home/hbouzidi/hbouzidi/AttentiveNAS/saved_models/attentive_nas_model_'+args.model+'_'+args.dataset+'_exits/attentive_nas.pth.tar'
     args.__dict__['active_subnet'] = args.__dict__['pareto_models'][args.model]
 
     train_loader, val_loader, train_sampler = build_data_loader(args)
@@ -77,7 +87,7 @@ if __name__ == '__main__':
     # Exit performances saving:
     header = ['Exit', 'TOP-1 Acc', 'TOP-5 Acc', 'Loss']
 
-    with open('./exit_perf_val.csv', 'w') as f:
+    with open('./'+args.model+'_'+args.dataset+'exit_perf.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         for i in range(n_exits+1):
@@ -90,7 +100,7 @@ if __name__ == '__main__':
     for i in range(n_exits+1):
         rows_exits.append([path_list[i], entropy_list[i], correct_list[i], conf_list[i]])
 
-    with open('./entropy_table_val.csv', 'w') as f:
+    with open('./'+args.model+'_'+args.dataset+'entropy_table.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         for i, row in enumerate(rows_exits, start=0):
