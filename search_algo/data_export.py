@@ -1,8 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
-from mobo.utils import find_pareto_front, calc_hypervolume
-from utils import get_result_dir
+from utils import find_pareto_front, calc_hypervolume, get_result_dir
 
 '''
 Export csv files for external visualization (for moo only).
@@ -15,7 +14,7 @@ class DataExport:
         Initialize data exporter from initial data (X, Y).
         '''
         self.n_var, self.n_obj = args.n_var, args.n_obj
-        self.batch_size = args.batch_size
+        self.pop_size = args.pop_size
         self.iter = 0
         self.X, self.Y = X, Y
         self.ref_point = np.max(Y, axis=0) if args.ref_point is None else args.ref_point
@@ -76,7 +75,7 @@ class DataExport:
         approx_pset = X_next[pidx]
         approx_front_samples = approx_pfront.shape[0]
 
-        d1 = {'iterID': np.full(self.batch_size, self.iter, dtype=int)} # export all data
+        d1 = {'iterID': np.full(self.pop_size, self.iter, dtype=int)} # export all data
         d2 = {'iterID': np.full(pfront.shape[0], self.iter, dtype=int)} # export pareto data
         d3 = {'iterID': np.full(approx_front_samples, self.iter, dtype=int)} # export pareto approximation data
 
@@ -94,7 +93,7 @@ class DataExport:
             d2['Pareto_'+col_name] = pfront[:, i]
             d3['Pareto_'+col_name] = approx_pfront[:, i]
 
-        d1['Hypervolume_indicator'] = np.full(self.batch_size, hv_value)
+        d1['Hypervolume_indicator'] = np.full(self.pop_size, hv_value)
         d3['ParetoFamily'] = np.zeros(approx_front_samples)
 
         df1 = pd.DataFrame(data=d1)

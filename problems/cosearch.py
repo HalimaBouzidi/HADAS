@@ -240,4 +240,3 @@ if __name__ == '__main__':
     train_loader, val_loader, train_sampler = build_data_loader(args)
     print(subnet_acc_eval(decod_, train_loader, val_loader, args))
     print(subnet_flops_eval(decod_, args))
-

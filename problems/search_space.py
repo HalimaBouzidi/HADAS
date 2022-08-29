@@ -129,21 +129,3 @@ class SearchSpace:
                 'expand_ratio': expand_,
                 }
 
-if __name__ == '__main__':
-
-    from joblib import load
-    search_space = SearchSpace()
-    rows = []
-    init_ = search_space.initialize_all(20)
-    print(init_[3])
-    print(search_space.encode_all(init_[3]))
-    decod_ = search_space.decode_all(search_space.encode_all(init_[3]))
-    print(decod_)
-    # Loading the accuracy predictor
-    predictor = load('./AttentiveNet/acc_predictor.joblib')
-    res = [decod_['resolution']]
-    for k in ['width', 'depth', 'kernel_size', 'expand_ratio']:
-        res += decod_[k]
-    input = np.asarray(res).reshape((1, -1))
-    acc = predictor.predict(input)
-    print(acc)
