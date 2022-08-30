@@ -20,7 +20,7 @@ python test_for_calibration.py --config-file ./configs/eval_attentive_nas_models
 
 Example to evaluate at a specific temperature value
 ```
-python test_for_calibration.py --config-file ./configs/eval_attentive_nas_models_tiny.yml --model a1 --loader train -single
+python test_for_calibration.py --config-file ./configs/eval_attentive_nas_models_tiny.yml --model a1 --temp_min=2 --loader train -single
 ```
 
 To visualize how predictions are distributed over entropy scores use the following script.
