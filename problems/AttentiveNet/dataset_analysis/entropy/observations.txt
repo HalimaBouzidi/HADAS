@@ -9,5 +9,7 @@ Script analyze_entropy_accuracy.py shows how the number of samples and their cor
 - I wonder if we should do it based on the classes themselves (based on how many samples belonging to class A are classified correctly)
 - I can look at how the images look in real life to qualitatively understand the underlying difficulty
 - How to determine the number of bins
+
+- I think I need to see if it varies when we get the entropy from the exit themselves
 _________________
 

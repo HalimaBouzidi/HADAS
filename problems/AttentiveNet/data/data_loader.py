@@ -5,7 +5,7 @@ from __future__ import print_function
 import torch
 import torchvision.transforms.functional as F
 from torchvision import datasets, transforms
-from torchvision.datasets import CIFAR10, CIFAR100, INDEXEDCIFAR10
+from torchvision.datasets import CIFAR10, CIFAR100, INDEXEDCIFAR10, INDEXEDCIFAR100
 from torch.utils.data import Dataset
 import math
 import sys
@@ -190,9 +190,9 @@ def build_default_CIFAR100_data_loader(args):
     test_transform = get_data_transform(args, is_training=False, augment=args.augment)
 
     #build datasets    
-    train_dataset = datasets.CIFAR100(root=args.dataset_dir, train=True,
+    train_dataset = INDEXEDCIFAR100(root=args.dataset_dir, train=True,
                                         download=True, transform=train_transform)
-    val_dataset = datasets.CIFAR100(root=args.dataset_dir, train=False,
+    val_dataset = INDEXEDCIFAR100(root=args.dataset_dir, train=False,
                                         download=True, transform=test_transform)
 
     #build data loaders

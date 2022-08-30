@@ -73,7 +73,6 @@ def accuracy(output, target, topk=(1,), per_sample=False):
 
 def entropy(output):
     """Estimates entropy of classification for each batch"""
-    #TODO figure out how to store the entropy values and how to get the image name
     with torch.no_grad():
         output = F.softmax(output) # to avoid NaN
         if len(output.shape) == 1:
@@ -108,7 +107,6 @@ def accuracy_exits(output, target, topk=(1,), n_exits=1, per_sample=False):
         else:
             return res_exits
 
-
 def entropy_exits(outputs, n_exits):
     """Estimates entropy of classification for each batch and for each exit"""
     entropy_exits = []
@@ -118,8 +116,8 @@ def entropy_exits(outputs, n_exits):
             output = F.softmax(output) # to avoid NaN
             if len(output.shape) == 1:
                 entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)))
-                entropy_exits.append(entropy_mtx )
+                entropy_exits.append(entropy_mtx)
             else:
                 entropy_mtx = - torch.sum(torch.mul(output, torch.log(output)), 1)
-                entropy_exits.append(entropy_mtx )
+                entropy_exits.append(entropy_mtx)
     return entropy_exits

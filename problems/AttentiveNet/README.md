@@ -13,6 +13,16 @@ Example to evaluate subnet's performance on a dataset with entropy grouping as f
 python test_for_clustering.py --config-file ./configs/eval_attentive_nas_models_tiny.yml --model a1
 ```
 
+Example to sweep over temperature values to identify the one that gives minimal Expected Calibration Error (ECE) (Once identified, you need to apply it manually to the outputs of a model -- see 'temp_scale_and_softmax()' in 'calibration.py' for reference)
+```
+python test_for_calibration.py --config-file ./configs/eval_attentive_nas_models_tiny.yml --model a1 --temp_step 1 --n_bins 5 --temp_min=1 --temp_max=100 --loader train
+```
+
+Example to evaluate at a specific temperature value
+```
+python test_for_calibration.py --config-file ./configs/eval_attentive_nas_models_tiny.yml --model a1 --loader train -single
+```
+
 To visualize how predictions are distributed over entropy scores use the following script.
 -- n_bins flag is for setting the number of entropy groups
 -- save_lists flag is for restructuring the dataset into entropy groups (currently working with tiny_imagenet)
