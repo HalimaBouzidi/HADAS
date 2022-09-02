@@ -4,8 +4,9 @@ from __future__ import print_function
 
 import torch
 import torchvision.transforms.functional as F
-from torchvision import datasets, transforms
-from torchvision.datasets import CIFAR10, CIFAR100, INDEXEDCIFAR10, INDEXEDCIFAR100
+from torchvision import transforms#, datasets
+from torchvision.datasets import CIFAR10, CIFAR100, ImageFolder#, INDEXEDCIFAR10, INDEXEDCIFAR100
+from typing import Any, Callable, cast, Dict, List, Optional, Tuple
 from torch.utils.data import Dataset
 import math
 import sys
@@ -17,7 +18,118 @@ import os
 
 from .data_transform import get_data_transform
 
-# TODO: implement NamedImageFOlder child class int the actual pytorch site-package to retrieve the name of the sample
+# Children dataset classes to return index or path names 
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+
+def pil_loader(path: str) -> Image.Image:
+    # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
+    with open(path, 'rb') as f:
+        img = Image.open(f)
+        return img.convert('RGB')
+
+
+# TODO: specify the return type
+def accimage_loader(path: str) -> Any:
+    import accimage
+    try:
+        return accimage.Image(path)
+    except IOError:
+        # Potentially a decoding problem, fall back to PIL.Image
+        return pil_loader(path)
+
+
+def default_loader(path: str) -> Any:
+    from torchvision import get_image_backend
+    if get_image_backend() == 'accimage':
+        return accimage_loader(path)
+    else:
+        return pil_loader(path)
+
+
+class INDEXEDCIFAR10(CIFAR10):       # originally defined in ~/$anaconda3/envs/$env_name$/lib/python3.6/site-packages/torchvision/datasets/cifar.py
+
+    def __getitem__(self, index: int) -> Tuple[Any, Any]:
+        """
+        Args:
+            index (int): Index
+
+        Returns:
+            tuple: (image, target) where target is index of the target class.
+        """
+        img, target = self.data[index], self.targets[index]
+
+        # doing this so that it is consistent with all other datasets
+        # to return a PIL Image
+        img = Image.fromarray(img)
+
+        if self.transform is not None:
+            img = self.transform(img)
+
+        if self.target_transform is not None:
+            target = self.target_transform(target)
+
+        return img, target, index
+
+class INDEXEDCIFAR100(CIFAR100):        # originally defined in ~/$anaconda3/envs/$env_name$/lib/python3.6/site-packages/torchvision/datasets/cifar.py
+
+    def __getitem__(self, index: int) -> Tuple[Any, Any]:
+        """
+        Args:
+            index (int): Index
+
+        Returns:
+            tuple: (image, target) where target is index of the target class.
+        """
+        img, target = self.data[index], self.targets[index]
+
+        # doing this so that it is consistent with all other datasets
+        # to return a PIL Image
+        img = Image.fromarray(img)
+
+        if self.transform is not None:
+            img = self.transform(img)
+
+        if self.target_transform is not None:
+            target = self.target_transform(target)
+
+        return img, target, index
+
+class NamedImageFolder(ImageFolder):        # originally defined in ~/$anaconda3/envs/$env_name$/lib/python3.6/site-packages/torchvision/datasets/folder.py
+    """A child class of ImageFolder to return the pathnames of data samples
+    """
+
+    def __init__(
+            self,
+            root: str,
+            transform: Optional[Callable] = None,
+            target_transform: Optional[Callable] = None,
+            loader: Callable[[str], Any] = default_loader,
+            is_valid_file: Optional[Callable[[str], bool]] = None,
+    ):
+        super(NamedImageFolder, self).__init__(root, loader=loader,
+                                          transform=transform,
+                                          target_transform=target_transform,
+                                          is_valid_file=is_valid_file)
+        self.imgs = self.samples
+
+    def __getitem__(self, index: int) -> Tuple[Any, Any]:
+        """
+        Args:
+            index (int): Index
+
+        Returns:
+            tuple: (sample, target) where target is class_index of the target class.
+        """
+        path, target = self.samples[index]
+        sample = self.loader(path)
+        if self.transform is not None:
+            sample = self.transform(sample)
+        if self.target_transform is not None:
+            target = self.target_transform(target)
+
+        return sample, target, path
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
 
 def build_data_loader(args):
     if args.dataset == 'imagenet':
@@ -101,8 +213,8 @@ def build_default_tiny_imagenet_data_loader(args):
     train_transform = get_data_transform(args, is_training=True, augment=args.augment)
     test_transform = get_data_transform(args, is_training=False, augment=args.augment)
 
-    train_dataset = datasets.NamedImageFolder(traindir, train_transform)
-    val_dataset = datasets.NamedImageFolder(valdir, test_transform)
+    train_dataset = NamedImageFolder(traindir, train_transform)
+    val_dataset = NamedImageFolder(valdir, test_transform)
 
     if args.distributed:
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset)
