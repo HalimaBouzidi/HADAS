@@ -1,4 +1,5 @@
 from torch import nn
+from .nn_utils import build_activation
 
 class ExitBlock(nn.Module):
 
@@ -19,7 +20,6 @@ class ExitBlock(nn.Module):
         )
         self.classifier = nn.Sequential(
             nn.Linear(conv_features , num_classes),
-            nn.Softmax(dim=1),
         )
 
     def forward(self, x):
