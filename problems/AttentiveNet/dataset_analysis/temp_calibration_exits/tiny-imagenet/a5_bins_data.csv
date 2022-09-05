@@ -1,0 +1,1020 @@
+Temp: 1,Exit :0,0: bin0(<0.2),Samples: 96015,accuracy: 0.107,avg_conf: 0.057
+Temp: 1,Exit :0,1: bin1(<0.4),Samples: 3233,accuracy: 0.388,avg_conf: 0.266
+Temp: 1,Exit :0,2: bin2(<0.6),Samples: 535,accuracy: 0.602,avg_conf: 0.479
+Temp: 1,Exit :0,3: bin3(<0.8),Samples: 141,accuracy: 0.752,avg_conf: 0.687
+Temp: 1,Exit :0,4: bin4(<1.0),Samples: 44,accuracy: 0.795,avg_conf: 0.887
+
+Temp: 1,Exit :1,0: bin0(<0.2),Samples: 95595,accuracy: 0.115,avg_conf: 0.059
+Temp: 1,Exit :1,1: bin1(<0.4),Samples: 3571,accuracy: 0.416,avg_conf: 0.266
+Temp: 1,Exit :1,2: bin2(<0.6),Samples: 590,accuracy: 0.612,avg_conf: 0.478
+Temp: 1,Exit :1,3: bin3(<0.8),Samples: 141,accuracy: 0.752,avg_conf: 0.686
+Temp: 1,Exit :1,4: bin4(<1.0),Samples: 71,accuracy: 0.789,avg_conf: 0.881
+
+Temp: 1,Exit :2,0: bin0(<0.2),Samples: 88921,accuracy: 0.143,avg_conf: 0.078
+Temp: 1,Exit :2,1: bin1(<0.4),Samples: 8306,accuracy: 0.44,avg_conf: 0.269
+Temp: 1,Exit :2,2: bin2(<0.6),Samples: 1762,accuracy: 0.669,avg_conf: 0.48
+Temp: 1,Exit :2,3: bin3(<0.8),Samples: 676,accuracy: 0.827,avg_conf: 0.684
+Temp: 1,Exit :2,4: bin4(<1.0),Samples: 303,accuracy: 0.894,avg_conf: 0.882
+
+Temp: 1,Exit :3,0: bin0(<0.2),Samples: 86082,accuracy: 0.152,avg_conf: 0.084
+Temp: 1,Exit :3,1: bin1(<0.4),Samples: 10351,accuracy: 0.445,avg_conf: 0.27
+Temp: 1,Exit :3,2: bin2(<0.6),Samples: 2268,accuracy: 0.687,avg_conf: 0.484
+Temp: 1,Exit :3,3: bin3(<0.8),Samples: 884,accuracy: 0.845,avg_conf: 0.685
+Temp: 1,Exit :3,4: bin4(<1.0),Samples: 383,accuracy: 0.932,avg_conf: 0.881
+
+Temp: 1,Exit :4,0: bin0(<0.2),Samples: 85069,accuracy: 0.156,avg_conf: 0.087
+Temp: 1,Exit :4,1: bin1(<0.4),Samples: 11163,accuracy: 0.452,avg_conf: 0.271
+Temp: 1,Exit :4,2: bin2(<0.6),Samples: 2411,accuracy: 0.689,avg_conf: 0.483
+Temp: 1,Exit :4,3: bin3(<0.8),Samples: 930,accuracy: 0.867,avg_conf: 0.69
+Temp: 1,Exit :4,4: bin4(<1.0),Samples: 395,accuracy: 0.929,avg_conf: 0.881
+
+Temp: 1,Exit :5,0: bin0(<0.2),Samples: 79198,accuracy: 0.167,avg_conf: 0.095
+Temp: 1,Exit :5,1: bin1(<0.4),Samples: 14870,accuracy: 0.468,avg_conf: 0.273
+Temp: 1,Exit :5,2: bin2(<0.6),Samples: 3671,accuracy: 0.714,avg_conf: 0.482
+Temp: 1,Exit :5,3: bin3(<0.8),Samples: 1517,accuracy: 0.866,avg_conf: 0.687
+Temp: 1,Exit :5,4: bin4(<1.0),Samples: 712,accuracy: 0.948,avg_conf: 0.883
+
+Temp: 1,Exit :6,0: bin0(<0.2),Samples: 71182,accuracy: 0.179,avg_conf: 0.103
+Temp: 1,Exit :6,1: bin1(<0.4),Samples: 19366,accuracy: 0.472,avg_conf: 0.276
+Temp: 1,Exit :6,2: bin2(<0.6),Samples: 5599,accuracy: 0.713,avg_conf: 0.483
+Temp: 1,Exit :6,3: bin3(<0.8),Samples: 2520,accuracy: 0.881,avg_conf: 0.689
+Temp: 1,Exit :6,4: bin4(<1.0),Samples: 1301,accuracy: 0.958,avg_conf: 0.884
+
+Temp: 1,Exit :7,0: bin0(<0.2),Samples: 65669,accuracy: 0.186,avg_conf: 0.107
+Temp: 1,Exit :7,1: bin1(<0.4),Samples: 22118,accuracy: 0.47,avg_conf: 0.278
+Temp: 1,Exit :7,2: bin2(<0.6),Samples: 7077,accuracy: 0.733,avg_conf: 0.485
+Temp: 1,Exit :7,3: bin3(<0.8),Samples: 3250,accuracy: 0.875,avg_conf: 0.691
+Temp: 1,Exit :7,4: bin4(<1.0),Samples: 1854,accuracy: 0.963,avg_conf: 0.885
+
+Temp: 1,Exit :8,0: bin0(<0.2),Samples: 63395,accuracy: 0.188,avg_conf: 0.109
+Temp: 1,Exit :8,1: bin1(<0.4),Samples: 23184,accuracy: 0.476,avg_conf: 0.278
+Temp: 1,Exit :8,2: bin2(<0.6),Samples: 7666,accuracy: 0.731,avg_conf: 0.485
+Temp: 1,Exit :8,3: bin3(<0.8),Samples: 3624,accuracy: 0.882,avg_conf: 0.691
+Temp: 1,Exit :8,4: bin4(<1.0),Samples: 2099,accuracy: 0.967,avg_conf: 0.886
+
+Temp: 1,Exit :9,0: bin0(<0.2),Samples: 37205,accuracy: 0.184,avg_conf: 0.122
+Temp: 1,Exit :9,1: bin1(<0.4),Samples: 26867,accuracy: 0.435,avg_conf: 0.287
+Temp: 1,Exit :9,2: bin2(<0.6),Samples: 14345,accuracy: 0.692,avg_conf: 0.491
+Temp: 1,Exit :9,3: bin3(<0.8),Samples: 10052,accuracy: 0.867,avg_conf: 0.698
+Temp: 1,Exit :9,4: bin4(<1.0),Samples: 11499,accuracy: 0.973,avg_conf: 0.913
+
+Temp: 1,Exit :10,0: bin0(<0.2),Samples: 31909,accuracy: 0.186,avg_conf: 0.124
+Temp: 1,Exit :10,1: bin1(<0.4),Samples: 25955,accuracy: 0.438,avg_conf: 0.289
+Temp: 1,Exit :10,2: bin2(<0.6),Samples: 15342,accuracy: 0.688,avg_conf: 0.493
+Temp: 1,Exit :10,3: bin3(<0.8),Samples: 11519,accuracy: 0.87,avg_conf: 0.698
+Temp: 1,Exit :10,4: bin4(<1.0),Samples: 15243,accuracy: 0.977,avg_conf: 0.917
+
+Temp: 1,Exit :11,0: bin0(<0.2),Samples: 27160,accuracy: 0.186,avg_conf: 0.125
+Temp: 1,Exit :11,1: bin1(<0.4),Samples: 24864,accuracy: 0.435,avg_conf: 0.291
+Temp: 1,Exit :11,2: bin2(<0.6),Samples: 15791,accuracy: 0.69,avg_conf: 0.495
+Temp: 1,Exit :11,3: bin3(<0.8),Samples: 12634,accuracy: 0.876,avg_conf: 0.7
+Temp: 1,Exit :11,4: bin4(<1.0),Samples: 19519,accuracy: 0.979,avg_conf: 0.92
+
+Temp: 1,Exit :12,0: bin0(<0.2),Samples: 25439,accuracy: 0.188,avg_conf: 0.125
+Temp: 1,Exit :12,1: bin1(<0.4),Samples: 23900,accuracy: 0.435,avg_conf: 0.292
+Temp: 1,Exit :12,2: bin2(<0.6),Samples: 16037,accuracy: 0.687,avg_conf: 0.495
+Temp: 1,Exit :12,3: bin3(<0.8),Samples: 13266,accuracy: 0.879,avg_conf: 0.701
+Temp: 1,Exit :12,4: bin4(<1.0),Samples: 21326,accuracy: 0.979,avg_conf: 0.922
+
+Temp: 1,Exit :13,0: bin0(<0.2),Samples: 24252,accuracy: 0.187,avg_conf: 0.126
+Temp: 1,Exit :13,1: bin1(<0.4),Samples: 23305,accuracy: 0.432,avg_conf: 0.292
+Temp: 1,Exit :13,2: bin2(<0.6),Samples: 16048,accuracy: 0.689,avg_conf: 0.495
+Temp: 1,Exit :13,3: bin3(<0.8),Samples: 13537,accuracy: 0.881,avg_conf: 0.7
+Temp: 1,Exit :13,4: bin4(<1.0),Samples: 22826,accuracy: 0.98,avg_conf: 0.922
+
+Temp: 1,Exit :14,0: bin0(<0.2),Samples: 23467,accuracy: 0.189,avg_conf: 0.126
+Temp: 1,Exit :14,1: bin1(<0.4),Samples: 22908,accuracy: 0.432,avg_conf: 0.292
+Temp: 1,Exit :14,2: bin2(<0.6),Samples: 15839,accuracy: 0.691,avg_conf: 0.495
+Temp: 1,Exit :14,3: bin3(<0.8),Samples: 13889,accuracy: 0.881,avg_conf: 0.701
+Temp: 1,Exit :14,4: bin4(<1.0),Samples: 23865,accuracy: 0.981,avg_conf: 0.923
+
+Temp: 1,Exit :15,0: bin0(<0.2),Samples: 17957,accuracy: 0.193,avg_conf: 0.121
+Temp: 1,Exit :15,1: bin1(<0.4),Samples: 15917,accuracy: 0.434,avg_conf: 0.294
+Temp: 1,Exit :15,2: bin2(<0.6),Samples: 12813,accuracy: 0.644,avg_conf: 0.499
+Temp: 1,Exit :15,3: bin3(<0.8),Samples: 12355,accuracy: 0.829,avg_conf: 0.703
+Temp: 1,Exit :15,4: bin4(<1.0),Samples: 40912,accuracy: 0.977,avg_conf: 0.946
+
+Temp: 1,Exit :16,0: bin0(<0.2),Samples: 9802,accuracy: 0.17,avg_conf: 0.133
+Temp: 1,Exit :16,1: bin1(<0.4),Samples: 13636,accuracy: 0.399,avg_conf: 0.297
+Temp: 1,Exit :16,2: bin2(<0.6),Samples: 12557,accuracy: 0.654,avg_conf: 0.499
+Temp: 1,Exit :16,3: bin3(<0.8),Samples: 17496,accuracy: 0.889,avg_conf: 0.713
+Temp: 1,Exit :16,4: bin4(<1.0),Samples: 46477,accuracy: 0.986,avg_conf: 0.906
+
+Temp: 1.0,Exit :0,0: bin0(<0.2),Samples: 96112,accuracy: 0.106,avg_conf: 0.057
+Temp: 1.0,Exit :0,1: bin1(<0.4),Samples: 3171,accuracy: 0.402,avg_conf: 0.264
+Temp: 1.0,Exit :0,2: bin2(<0.6),Samples: 509,accuracy: 0.615,avg_conf: 0.478
+Temp: 1.0,Exit :0,3: bin3(<0.8),Samples: 133,accuracy: 0.774,avg_conf: 0.683
+Temp: 1.0,Exit :0,4: bin4(<1.0),Samples: 43,accuracy: 0.814,avg_conf: 0.879
+
+Temp: 1.0,Exit :1,0: bin0(<0.2),Samples: 95759,accuracy: 0.115,avg_conf: 0.059
+Temp: 1.0,Exit :1,1: bin1(<0.4),Samples: 3463,accuracy: 0.424,avg_conf: 0.264
+Temp: 1.0,Exit :1,2: bin2(<0.6),Samples: 532,accuracy: 0.654,avg_conf: 0.478
+Temp: 1.0,Exit :1,3: bin3(<0.8),Samples: 157,accuracy: 0.777,avg_conf: 0.686
+Temp: 1.0,Exit :1,4: bin4(<1.0),Samples: 57,accuracy: 0.825,avg_conf: 0.882
+
+Temp: 1.0,Exit :2,0: bin0(<0.2),Samples: 89014,accuracy: 0.143,avg_conf: 0.078
+Temp: 1.0,Exit :2,1: bin1(<0.4),Samples: 8276,accuracy: 0.446,avg_conf: 0.27
+Temp: 1.0,Exit :2,2: bin2(<0.6),Samples: 1697,accuracy: 0.668,avg_conf: 0.486
+Temp: 1.0,Exit :2,3: bin3(<0.8),Samples: 677,accuracy: 0.843,avg_conf: 0.689
+Temp: 1.0,Exit :2,4: bin4(<1.0),Samples: 304,accuracy: 0.882,avg_conf: 0.885
+
+Temp: 1.0,Exit :3,0: bin0(<0.2),Samples: 86289,accuracy: 0.15,avg_conf: 0.084
+Temp: 1.0,Exit :3,1: bin1(<0.4),Samples: 10189,accuracy: 0.453,avg_conf: 0.271
+Temp: 1.0,Exit :3,2: bin2(<0.6),Samples: 2213,accuracy: 0.7,avg_conf: 0.482
+Temp: 1.0,Exit :3,3: bin3(<0.8),Samples: 885,accuracy: 0.856,avg_conf: 0.689
+Temp: 1.0,Exit :3,4: bin4(<1.0),Samples: 392,accuracy: 0.926,avg_conf: 0.882
+
+Temp: 1.0,Exit :4,0: bin0(<0.2),Samples: 85172,accuracy: 0.155,avg_conf: 0.087
+Temp: 1.0,Exit :4,1: bin1(<0.4),Samples: 11025,accuracy: 0.46,avg_conf: 0.27
+Temp: 1.0,Exit :4,2: bin2(<0.6),Samples: 2427,accuracy: 0.707,avg_conf: 0.479
+Temp: 1.0,Exit :4,3: bin3(<0.8),Samples: 953,accuracy: 0.868,avg_conf: 0.687
+Temp: 1.0,Exit :4,4: bin4(<1.0),Samples: 391,accuracy: 0.926,avg_conf: 0.883
+
+Temp: 1.0,Exit :5,0: bin0(<0.2),Samples: 79247,accuracy: 0.167,avg_conf: 0.095
+Temp: 1.0,Exit :5,1: bin1(<0.4),Samples: 14792,accuracy: 0.466,avg_conf: 0.272
+Temp: 1.0,Exit :5,2: bin2(<0.6),Samples: 3633,accuracy: 0.723,avg_conf: 0.482
+Temp: 1.0,Exit :5,3: bin3(<0.8),Samples: 1582,accuracy: 0.863,avg_conf: 0.688
+Temp: 1.0,Exit :5,4: bin4(<1.0),Samples: 714,accuracy: 0.95,avg_conf: 0.883
+
+Temp: 1.0,Exit :6,0: bin0(<0.2),Samples: 71217,accuracy: 0.179,avg_conf: 0.102
+Temp: 1.0,Exit :6,1: bin1(<0.4),Samples: 19329,accuracy: 0.468,avg_conf: 0.276
+Temp: 1.0,Exit :6,2: bin2(<0.6),Samples: 5555,accuracy: 0.719,avg_conf: 0.485
+Temp: 1.0,Exit :6,3: bin3(<0.8),Samples: 2586,accuracy: 0.872,avg_conf: 0.689
+Temp: 1.0,Exit :6,4: bin4(<1.0),Samples: 1281,accuracy: 0.959,avg_conf: 0.886
+
+Temp: 1.0,Exit :7,0: bin0(<0.2),Samples: 65739,accuracy: 0.188,avg_conf: 0.107
+Temp: 1.0,Exit :7,1: bin1(<0.4),Samples: 22105,accuracy: 0.473,avg_conf: 0.278
+Temp: 1.0,Exit :7,2: bin2(<0.6),Samples: 6935,accuracy: 0.733,avg_conf: 0.485
+Temp: 1.0,Exit :7,3: bin3(<0.8),Samples: 3298,accuracy: 0.879,avg_conf: 0.691
+Temp: 1.0,Exit :7,4: bin4(<1.0),Samples: 1891,accuracy: 0.959,avg_conf: 0.885
+
+Temp: 1.0,Exit :8,0: bin0(<0.2),Samples: 63483,accuracy: 0.188,avg_conf: 0.109
+Temp: 1.0,Exit :8,1: bin1(<0.4),Samples: 23199,accuracy: 0.48,avg_conf: 0.279
+Temp: 1.0,Exit :8,2: bin2(<0.6),Samples: 7422,accuracy: 0.731,avg_conf: 0.484
+Temp: 1.0,Exit :8,3: bin3(<0.8),Samples: 3739,accuracy: 0.885,avg_conf: 0.69
+Temp: 1.0,Exit :8,4: bin4(<1.0),Samples: 2125,accuracy: 0.966,avg_conf: 0.886
+
+Temp: 1.0,Exit :9,0: bin0(<0.2),Samples: 37116,accuracy: 0.183,avg_conf: 0.122
+Temp: 1.0,Exit :9,1: bin1(<0.4),Samples: 26936,accuracy: 0.432,avg_conf: 0.287
+Temp: 1.0,Exit :9,2: bin2(<0.6),Samples: 14551,accuracy: 0.685,avg_conf: 0.492
+Temp: 1.0,Exit :9,3: bin3(<0.8),Samples: 9813,accuracy: 0.862,avg_conf: 0.695
+Temp: 1.0,Exit :9,4: bin4(<1.0),Samples: 11552,accuracy: 0.977,avg_conf: 0.912
+
+Temp: 1.0,Exit :10,0: bin0(<0.2),Samples: 31897,accuracy: 0.185,avg_conf: 0.124
+Temp: 1.0,Exit :10,1: bin1(<0.4),Samples: 25965,accuracy: 0.434,avg_conf: 0.289
+Temp: 1.0,Exit :10,2: bin2(<0.6),Samples: 15463,accuracy: 0.684,avg_conf: 0.493
+Temp: 1.0,Exit :10,3: bin3(<0.8),Samples: 11455,accuracy: 0.872,avg_conf: 0.698
+Temp: 1.0,Exit :10,4: bin4(<1.0),Samples: 15188,accuracy: 0.978,avg_conf: 0.917
+
+Temp: 1.0,Exit :11,0: bin0(<0.2),Samples: 27279,accuracy: 0.189,avg_conf: 0.125
+Temp: 1.0,Exit :11,1: bin1(<0.4),Samples: 24666,accuracy: 0.435,avg_conf: 0.291
+Temp: 1.0,Exit :11,2: bin2(<0.6),Samples: 15843,accuracy: 0.684,avg_conf: 0.494
+Temp: 1.0,Exit :11,3: bin3(<0.8),Samples: 12709,accuracy: 0.874,avg_conf: 0.699
+Temp: 1.0,Exit :11,4: bin4(<1.0),Samples: 19471,accuracy: 0.981,avg_conf: 0.92
+
+Temp: 1.0,Exit :12,0: bin0(<0.2),Samples: 25511,accuracy: 0.188,avg_conf: 0.126
+Temp: 1.0,Exit :12,1: bin1(<0.4),Samples: 23882,accuracy: 0.432,avg_conf: 0.291
+Temp: 1.0,Exit :12,2: bin2(<0.6),Samples: 15995,accuracy: 0.684,avg_conf: 0.494
+Temp: 1.0,Exit :12,3: bin3(<0.8),Samples: 13198,accuracy: 0.875,avg_conf: 0.7
+Temp: 1.0,Exit :12,4: bin4(<1.0),Samples: 21382,accuracy: 0.981,avg_conf: 0.921
+
+Temp: 1.0,Exit :13,0: bin0(<0.2),Samples: 24246,accuracy: 0.186,avg_conf: 0.126
+Temp: 1.0,Exit :13,1: bin1(<0.4),Samples: 23482,accuracy: 0.436,avg_conf: 0.291
+Temp: 1.0,Exit :13,2: bin2(<0.6),Samples: 16072,accuracy: 0.689,avg_conf: 0.496
+Temp: 1.0,Exit :13,3: bin3(<0.8),Samples: 13397,accuracy: 0.879,avg_conf: 0.701
+Temp: 1.0,Exit :13,4: bin4(<1.0),Samples: 22771,accuracy: 0.981,avg_conf: 0.922
+
+Temp: 1.0,Exit :14,0: bin0(<0.2),Samples: 23595,accuracy: 0.191,avg_conf: 0.126
+Temp: 1.0,Exit :14,1: bin1(<0.4),Samples: 22805,accuracy: 0.428,avg_conf: 0.292
+Temp: 1.0,Exit :14,2: bin2(<0.6),Samples: 16029,accuracy: 0.69,avg_conf: 0.495
+Temp: 1.0,Exit :14,3: bin3(<0.8),Samples: 13667,accuracy: 0.879,avg_conf: 0.701
+Temp: 1.0,Exit :14,4: bin4(<1.0),Samples: 23872,accuracy: 0.983,avg_conf: 0.923
+
+Temp: 1.0,Exit :15,0: bin0(<0.2),Samples: 18049,accuracy: 0.192,avg_conf: 0.121
+Temp: 1.0,Exit :15,1: bin1(<0.4),Samples: 16091,accuracy: 0.427,avg_conf: 0.294
+Temp: 1.0,Exit :15,2: bin2(<0.6),Samples: 12500,accuracy: 0.642,avg_conf: 0.499
+Temp: 1.0,Exit :15,3: bin3(<0.8),Samples: 12443,accuracy: 0.829,avg_conf: 0.704
+Temp: 1.0,Exit :15,4: bin4(<1.0),Samples: 40867,accuracy: 0.977,avg_conf: 0.946
+
+Temp: 1.0,Exit :16,0: bin0(<0.2),Samples: 9818,accuracy: 0.171,avg_conf: 0.134
+Temp: 1.0,Exit :16,1: bin1(<0.4),Samples: 13757,accuracy: 0.394,avg_conf: 0.296
+Temp: 1.0,Exit :16,2: bin2(<0.6),Samples: 12575,accuracy: 0.655,avg_conf: 0.5
+Temp: 1.0,Exit :16,3: bin3(<0.8),Samples: 17463,accuracy: 0.888,avg_conf: 0.713
+Temp: 1.0,Exit :16,4: bin4(<1.0),Samples: 46355,accuracy: 0.987,avg_conf: 0.907
+
+Temp: 2.0,Exit :0,0: bin0(<0.2),Samples: 99897,accuracy: 0.12,avg_conf: 0.022
+Temp: 2.0,Exit :0,1: bin1(<0.4),Samples: 57,accuracy: 0.754,avg_conf: 0.269
+Temp: 2.0,Exit :0,2: bin2(<0.6),Samples: 8,accuracy: 0.875,avg_conf: 0.474
+Temp: 2.0,Exit :0,3: bin3(<0.8),Samples: 5,accuracy: 0.6,avg_conf: 0.655
+Temp: 2.0,Exit :0,4: bin4(<1.0),Samples: 1,accuracy: 1.0,avg_conf: 0.86
+
+Temp: 2.0,Exit :1,0: bin0(<0.2),Samples: 99893,accuracy: 0.13,avg_conf: 0.023
+Temp: 2.0,Exit :1,1: bin1(<0.4),Samples: 59,accuracy: 0.746,avg_conf: 0.265
+Temp: 2.0,Exit :1,2: bin2(<0.6),Samples: 10,accuracy: 0.6,avg_conf: 0.48
+Temp: 2.0,Exit :1,3: bin3(<0.8),Samples: 5,accuracy: 1.0,avg_conf: 0.636
+Temp: 2.0,Exit :1,4: bin4(<1.0),Samples: 1,accuracy: 1.0,avg_conf: 0.871
+
+Temp: 2.0,Exit :2,0: bin0(<0.2),Samples: 99588,accuracy: 0.184,avg_conf: 0.031
+Temp: 2.0,Exit :2,1: bin1(<0.4),Samples: 317,accuracy: 0.836,avg_conf: 0.262
+Temp: 2.0,Exit :2,2: bin2(<0.6),Samples: 51,accuracy: 0.863,avg_conf: 0.472
+Temp: 2.0,Exit :2,3: bin3(<0.8),Samples: 9,accuracy: 1.0,avg_conf: 0.652
+Temp: 2.0,Exit :2,4: bin4(<1.0),Samples: 3,accuracy: 1.0,avg_conf: 0.829
+
+Temp: 2.0,Exit :3,0: bin0(<0.2),Samples: 99453,accuracy: 0.202,avg_conf: 0.034
+Temp: 2.0,Exit :3,1: bin1(<0.4),Samples: 434,accuracy: 0.864,avg_conf: 0.263
+Temp: 2.0,Exit :3,2: bin2(<0.6),Samples: 70,accuracy: 0.943,avg_conf: 0.469
+Temp: 2.0,Exit :3,3: bin3(<0.8),Samples: 11,accuracy: 1.0,avg_conf: 0.706
+Temp: 2.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 2.0,Exit :4,0: bin0(<0.2),Samples: 99445,accuracy: 0.21,avg_conf: 0.035
+Temp: 2.0,Exit :4,1: bin1(<0.4),Samples: 450,accuracy: 0.884,avg_conf: 0.264
+Temp: 2.0,Exit :4,2: bin2(<0.6),Samples: 61,accuracy: 0.967,avg_conf: 0.474
+Temp: 2.0,Exit :4,3: bin3(<0.8),Samples: 12,accuracy: 1.0,avg_conf: 0.685
+Temp: 2.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 2.0,Exit :5,0: bin0(<0.2),Samples: 98975,accuracy: 0.244,avg_conf: 0.04
+Temp: 2.0,Exit :5,1: bin1(<0.4),Samples: 857,accuracy: 0.868,avg_conf: 0.264
+Temp: 2.0,Exit :5,2: bin2(<0.6),Samples: 110,accuracy: 0.982,avg_conf: 0.475
+Temp: 2.0,Exit :5,3: bin3(<0.8),Samples: 26,accuracy: 1.0,avg_conf: 0.669
+Temp: 2.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 2.0,Exit :6,0: bin0(<0.2),Samples: 98057,accuracy: 0.281,avg_conf: 0.047
+Temp: 2.0,Exit :6,1: bin1(<0.4),Samples: 1631,accuracy: 0.888,avg_conf: 0.264
+Temp: 2.0,Exit :6,2: bin2(<0.6),Samples: 232,accuracy: 0.97,avg_conf: 0.474
+Temp: 2.0,Exit :6,3: bin3(<0.8),Samples: 44,accuracy: 0.977,avg_conf: 0.665
+Temp: 2.0,Exit :6,4: bin4(<1.0),Samples: 4,accuracy: 1.0,avg_conf: 0.849
+
+Temp: 2.0,Exit :7,0: bin0(<0.2),Samples: 97294,accuracy: 0.308,avg_conf: 0.051
+Temp: 2.0,Exit :7,1: bin1(<0.4),Samples: 2299,accuracy: 0.896,avg_conf: 0.266
+Temp: 2.0,Exit :7,2: bin2(<0.6),Samples: 319,accuracy: 0.978,avg_conf: 0.476
+Temp: 2.0,Exit :7,3: bin3(<0.8),Samples: 50,accuracy: 0.96,avg_conf: 0.671
+Temp: 2.0,Exit :7,4: bin4(<1.0),Samples: 6,accuracy: 1.0,avg_conf: 0.862
+
+Temp: 2.0,Exit :8,0: bin0(<0.2),Samples: 96937,accuracy: 0.32,avg_conf: 0.053
+Temp: 2.0,Exit :8,1: bin1(<0.4),Samples: 2600,accuracy: 0.897,avg_conf: 0.264
+Temp: 2.0,Exit :8,2: bin2(<0.6),Samples: 368,accuracy: 0.976,avg_conf: 0.472
+Temp: 2.0,Exit :8,3: bin3(<0.8),Samples: 55,accuracy: 0.964,avg_conf: 0.668
+Temp: 2.0,Exit :8,4: bin4(<1.0),Samples: 8,accuracy: 1.0,avg_conf: 0.857
+
+Temp: 2.0,Exit :9,0: bin0(<0.2),Samples: 83734,accuracy: 0.401,avg_conf: 0.073
+Temp: 2.0,Exit :9,1: bin1(<0.4),Samples: 11410,accuracy: 0.889,avg_conf: 0.277
+Temp: 2.0,Exit :9,2: bin2(<0.6),Samples: 3354,accuracy: 0.971,avg_conf: 0.483
+Temp: 2.0,Exit :9,3: bin3(<0.8),Samples: 1162,accuracy: 0.996,avg_conf: 0.686
+Temp: 2.0,Exit :9,4: bin4(<1.0),Samples: 308,accuracy: 0.997,avg_conf: 0.867
+
+Temp: 2.0,Exit :10,0: bin0(<0.2),Samples: 79266,accuracy: 0.424,avg_conf: 0.077
+Temp: 2.0,Exit :10,1: bin1(<0.4),Samples: 13827,accuracy: 0.899,avg_conf: 0.279
+Temp: 2.0,Exit :10,2: bin2(<0.6),Samples: 4582,accuracy: 0.976,avg_conf: 0.484
+Temp: 2.0,Exit :10,3: bin3(<0.8),Samples: 1756,accuracy: 0.995,avg_conf: 0.685
+Temp: 2.0,Exit :10,4: bin4(<1.0),Samples: 537,accuracy: 0.996,avg_conf: 0.868
+
+Temp: 2.0,Exit :11,0: bin0(<0.2),Samples: 74698,accuracy: 0.445,avg_conf: 0.081
+Temp: 2.0,Exit :11,1: bin1(<0.4),Samples: 16194,accuracy: 0.911,avg_conf: 0.281
+Temp: 2.0,Exit :11,2: bin2(<0.6),Samples: 6014,accuracy: 0.978,avg_conf: 0.485
+Temp: 2.0,Exit :11,3: bin3(<0.8),Samples: 2355,accuracy: 0.996,avg_conf: 0.684
+Temp: 2.0,Exit :11,4: bin4(<1.0),Samples: 707,accuracy: 0.996,avg_conf: 0.87
+
+Temp: 2.0,Exit :12,0: bin0(<0.2),Samples: 72816,accuracy: 0.455,avg_conf: 0.082
+Temp: 2.0,Exit :12,1: bin1(<0.4),Samples: 17211,accuracy: 0.915,avg_conf: 0.282
+Temp: 2.0,Exit :12,2: bin2(<0.6),Samples: 6701,accuracy: 0.982,avg_conf: 0.484
+Temp: 2.0,Exit :12,3: bin3(<0.8),Samples: 2610,accuracy: 0.996,avg_conf: 0.685
+Temp: 2.0,Exit :12,4: bin4(<1.0),Samples: 630,accuracy: 1.0,avg_conf: 0.86
+
+Temp: 2.0,Exit :13,0: bin0(<0.2),Samples: 71392,accuracy: 0.462,avg_conf: 0.083
+Temp: 2.0,Exit :13,1: bin1(<0.4),Samples: 18070,accuracy: 0.918,avg_conf: 0.283
+Temp: 2.0,Exit :13,2: bin2(<0.6),Samples: 7119,accuracy: 0.984,avg_conf: 0.485
+Temp: 2.0,Exit :13,3: bin3(<0.8),Samples: 2824,accuracy: 0.997,avg_conf: 0.684
+Temp: 2.0,Exit :13,4: bin4(<1.0),Samples: 563,accuracy: 1.0,avg_conf: 0.856
+
+Temp: 2.0,Exit :14,0: bin0(<0.2),Samples: 70370,accuracy: 0.465,avg_conf: 0.084
+Temp: 2.0,Exit :14,1: bin1(<0.4),Samples: 18498,accuracy: 0.921,avg_conf: 0.284
+Temp: 2.0,Exit :14,2: bin2(<0.6),Samples: 7509,accuracy: 0.985,avg_conf: 0.486
+Temp: 2.0,Exit :14,3: bin3(<0.8),Samples: 2959,accuracy: 0.998,avg_conf: 0.683
+Temp: 2.0,Exit :14,4: bin4(<1.0),Samples: 632,accuracy: 1.0,avg_conf: 0.853
+
+Temp: 2.0,Exit :15,0: bin0(<0.2),Samples: 57702,accuracy: 0.496,avg_conf: 0.084
+Temp: 2.0,Exit :15,1: bin1(<0.4),Samples: 20915,accuracy: 0.924,avg_conf: 0.289
+Temp: 2.0,Exit :15,2: bin2(<0.6),Samples: 11472,accuracy: 0.978,avg_conf: 0.491
+Temp: 2.0,Exit :15,3: bin3(<0.8),Samples: 6550,accuracy: 0.995,avg_conf: 0.691
+Temp: 2.0,Exit :15,4: bin4(<1.0),Samples: 3329,accuracy: 0.998,avg_conf: 0.884
+
+Temp: 2.0,Exit :16,0: bin0(<0.2),Samples: 70415,accuracy: 0.676,avg_conf: 0.112
+Temp: 2.0,Exit :16,1: bin1(<0.4),Samples: 26172,accuracy: 0.982,avg_conf: 0.265
+Temp: 2.0,Exit :16,2: bin2(<0.6),Samples: 2939,accuracy: 0.997,avg_conf: 0.469
+Temp: 2.0,Exit :16,3: bin3(<0.8),Samples: 393,accuracy: 1.0,avg_conf: 0.675
+Temp: 2.0,Exit :16,4: bin4(<1.0),Samples: 49,accuracy: 1.0,avg_conf: 0.863
+
+Temp: 3.0,Exit :0,0: bin0(<0.2),Samples: 99959,accuracy: 0.12,avg_conf: 0.014
+Temp: 3.0,Exit :0,1: bin1(<0.4),Samples: 8,accuracy: 1.0,avg_conf: 0.278
+Temp: 3.0,Exit :0,2: bin2(<0.6),Samples: 1,accuracy: 0.0,avg_conf: 0.422
+Temp: 3.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :1,0: bin0(<0.2),Samples: 99961,accuracy: 0.13,avg_conf: 0.014
+Temp: 3.0,Exit :1,1: bin1(<0.4),Samples: 7,accuracy: 0.857,avg_conf: 0.299
+Temp: 3.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :2,0: bin0(<0.2),Samples: 99937,accuracy: 0.185,avg_conf: 0.018
+Temp: 3.0,Exit :2,1: bin1(<0.4),Samples: 28,accuracy: 0.929,avg_conf: 0.234
+Temp: 3.0,Exit :2,2: bin2(<0.6),Samples: 3,accuracy: 1.0,avg_conf: 0.431
+Temp: 3.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :3,0: bin0(<0.2),Samples: 99935,accuracy: 0.204,avg_conf: 0.02
+Temp: 3.0,Exit :3,1: bin1(<0.4),Samples: 33,accuracy: 0.939,avg_conf: 0.256
+Temp: 3.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :4,0: bin0(<0.2),Samples: 99941,accuracy: 0.212,avg_conf: 0.02
+Temp: 3.0,Exit :4,1: bin1(<0.4),Samples: 27,accuracy: 0.963,avg_conf: 0.238
+Temp: 3.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :5,0: bin0(<0.2),Samples: 99931,accuracy: 0.247,avg_conf: 0.023
+Temp: 3.0,Exit :5,1: bin1(<0.4),Samples: 36,accuracy: 0.944,avg_conf: 0.254
+Temp: 3.0,Exit :5,2: bin2(<0.6),Samples: 1,accuracy: 1.0,avg_conf: 0.418
+Temp: 3.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :6,0: bin0(<0.2),Samples: 99873,accuracy: 0.293,avg_conf: 0.026
+Temp: 3.0,Exit :6,1: bin1(<0.4),Samples: 91,accuracy: 0.945,avg_conf: 0.249
+Temp: 3.0,Exit :6,2: bin2(<0.6),Samples: 4,accuracy: 0.75,avg_conf: 0.429
+Temp: 3.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :7,0: bin0(<0.2),Samples: 99845,accuracy: 0.325,avg_conf: 0.028
+Temp: 3.0,Exit :7,1: bin1(<0.4),Samples: 122,accuracy: 0.926,avg_conf: 0.247
+Temp: 3.0,Exit :7,2: bin2(<0.6),Samples: 1,accuracy: 1.0,avg_conf: 0.415
+Temp: 3.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :8,0: bin0(<0.2),Samples: 99854,accuracy: 0.338,avg_conf: 0.029
+Temp: 3.0,Exit :8,1: bin1(<0.4),Samples: 112,accuracy: 0.955,avg_conf: 0.25
+Temp: 3.0,Exit :8,2: bin2(<0.6),Samples: 2,accuracy: 1.0,avg_conf: 0.454
+Temp: 3.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 3.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :9,0: bin0(<0.2),Samples: 97757,accuracy: 0.471,avg_conf: 0.046
+Temp: 3.0,Exit :9,1: bin1(<0.4),Samples: 1958,accuracy: 0.977,avg_conf: 0.26
+Temp: 3.0,Exit :9,2: bin2(<0.6),Samples: 210,accuracy: 0.986,avg_conf: 0.47
+Temp: 3.0,Exit :9,3: bin3(<0.8),Samples: 37,accuracy: 1.0,avg_conf: 0.664
+Temp: 3.0,Exit :9,4: bin4(<1.0),Samples: 6,accuracy: 1.0,avg_conf: 0.845
+
+Temp: 3.0,Exit :10,0: bin0(<0.2),Samples: 96722,accuracy: 0.51,avg_conf: 0.049
+Temp: 3.0,Exit :10,1: bin1(<0.4),Samples: 2875,accuracy: 0.982,avg_conf: 0.262
+Temp: 3.0,Exit :10,2: bin2(<0.6),Samples: 313,accuracy: 0.997,avg_conf: 0.473
+Temp: 3.0,Exit :10,3: bin3(<0.8),Samples: 55,accuracy: 1.0,avg_conf: 0.675
+Temp: 3.0,Exit :10,4: bin4(<1.0),Samples: 3,accuracy: 1.0,avg_conf: 0.841
+
+Temp: 3.0,Exit :11,0: bin0(<0.2),Samples: 95974,accuracy: 0.55,avg_conf: 0.054
+Temp: 3.0,Exit :11,1: bin1(<0.4),Samples: 3512,accuracy: 0.987,avg_conf: 0.264
+Temp: 3.0,Exit :11,2: bin2(<0.6),Samples: 425,accuracy: 0.991,avg_conf: 0.471
+Temp: 3.0,Exit :11,3: bin3(<0.8),Samples: 49,accuracy: 1.0,avg_conf: 0.67
+Temp: 3.0,Exit :11,4: bin4(<1.0),Samples: 8,accuracy: 1.0,avg_conf: 0.832
+
+Temp: 3.0,Exit :12,0: bin0(<0.2),Samples: 95805,accuracy: 0.568,avg_conf: 0.056
+Temp: 3.0,Exit :12,1: bin1(<0.4),Samples: 3831,accuracy: 0.989,avg_conf: 0.262
+Temp: 3.0,Exit :12,2: bin2(<0.6),Samples: 311,accuracy: 1.0,avg_conf: 0.467
+Temp: 3.0,Exit :12,3: bin3(<0.8),Samples: 18,accuracy: 1.0,avg_conf: 0.655
+Temp: 3.0,Exit :12,4: bin4(<1.0),Samples: 3,accuracy: 1.0,avg_conf: 0.816
+
+Temp: 3.0,Exit :13,0: bin0(<0.2),Samples: 95648,accuracy: 0.58,avg_conf: 0.057
+Temp: 3.0,Exit :13,1: bin1(<0.4),Samples: 4002,accuracy: 0.99,avg_conf: 0.26
+Temp: 3.0,Exit :13,2: bin2(<0.6),Samples: 300,accuracy: 1.0,avg_conf: 0.457
+Temp: 3.0,Exit :13,3: bin3(<0.8),Samples: 18,accuracy: 1.0,avg_conf: 0.658
+Temp: 3.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :14,0: bin0(<0.2),Samples: 95430,accuracy: 0.59,avg_conf: 0.058
+Temp: 3.0,Exit :14,1: bin1(<0.4),Samples: 4210,accuracy: 0.992,avg_conf: 0.26
+Temp: 3.0,Exit :14,2: bin2(<0.6),Samples: 313,accuracy: 1.0,avg_conf: 0.459
+Temp: 3.0,Exit :14,3: bin3(<0.8),Samples: 15,accuracy: 1.0,avg_conf: 0.661
+Temp: 3.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 3.0,Exit :15,0: bin0(<0.2),Samples: 89836,accuracy: 0.651,avg_conf: 0.065
+Temp: 3.0,Exit :15,1: bin1(<0.4),Samples: 8076,accuracy: 0.988,avg_conf: 0.269
+Temp: 3.0,Exit :15,2: bin2(<0.6),Samples: 1493,accuracy: 0.997,avg_conf: 0.477
+Temp: 3.0,Exit :15,3: bin3(<0.8),Samples: 453,accuracy: 1.0,avg_conf: 0.683
+Temp: 3.0,Exit :15,4: bin4(<1.0),Samples: 110,accuracy: 1.0,avg_conf: 0.87
+
+Temp: 3.0,Exit :16,0: bin0(<0.2),Samples: 99545,accuracy: 0.765,avg_conf: 0.056
+Temp: 3.0,Exit :16,1: bin1(<0.4),Samples: 399,accuracy: 0.995,avg_conf: 0.253
+Temp: 3.0,Exit :16,2: bin2(<0.6),Samples: 21,accuracy: 1.0,avg_conf: 0.48
+Temp: 3.0,Exit :16,3: bin3(<0.8),Samples: 3,accuracy: 1.0,avg_conf: 0.629
+Temp: 3.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :0,0: bin0(<0.2),Samples: 99967,accuracy: 0.122,avg_conf: 0.011
+Temp: 4.0,Exit :0,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.209
+Temp: 4.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :1,0: bin0(<0.2),Samples: 99967,accuracy: 0.132,avg_conf: 0.011
+Temp: 4.0,Exit :1,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.206
+Temp: 4.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :2,0: bin0(<0.2),Samples: 99967,accuracy: 0.186,avg_conf: 0.013
+Temp: 4.0,Exit :2,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.276
+Temp: 4.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :3,0: bin0(<0.2),Samples: 99965,accuracy: 0.206,avg_conf: 0.014
+Temp: 4.0,Exit :3,1: bin1(<0.4),Samples: 3,accuracy: 0.667,avg_conf: 0.256
+Temp: 4.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :4,0: bin0(<0.2),Samples: 99966,accuracy: 0.213,avg_conf: 0.015
+Temp: 4.0,Exit :4,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.205
+Temp: 4.0,Exit :4,2: bin2(<0.6),Samples: 1,accuracy: 0.0,avg_conf: 0.401
+Temp: 4.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :5,0: bin0(<0.2),Samples: 99965,accuracy: 0.25,avg_conf: 0.016
+Temp: 4.0,Exit :5,1: bin1(<0.4),Samples: 3,accuracy: 1.0,avg_conf: 0.256
+Temp: 4.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :6,0: bin0(<0.2),Samples: 99963,accuracy: 0.294,avg_conf: 0.018
+Temp: 4.0,Exit :6,1: bin1(<0.4),Samples: 5,accuracy: 1.0,avg_conf: 0.227
+Temp: 4.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :7,0: bin0(<0.2),Samples: 99965,accuracy: 0.327,avg_conf: 0.019
+Temp: 4.0,Exit :7,1: bin1(<0.4),Samples: 3,accuracy: 1.0,avg_conf: 0.241
+Temp: 4.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :8,0: bin0(<0.2),Samples: 99963,accuracy: 0.34,avg_conf: 0.02
+Temp: 4.0,Exit :8,1: bin1(<0.4),Samples: 5,accuracy: 0.8,avg_conf: 0.223
+Temp: 4.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :9,0: bin0(<0.2),Samples: 99792,accuracy: 0.483,avg_conf: 0.029
+Temp: 4.0,Exit :9,1: bin1(<0.4),Samples: 167,accuracy: 0.994,avg_conf: 0.251
+Temp: 4.0,Exit :9,2: bin2(<0.6),Samples: 9,accuracy: 1.0,avg_conf: 0.474
+Temp: 4.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :10,0: bin0(<0.2),Samples: 99677,accuracy: 0.527,avg_conf: 0.032
+Temp: 4.0,Exit :10,1: bin1(<0.4),Samples: 281,accuracy: 0.996,avg_conf: 0.251
+Temp: 4.0,Exit :10,2: bin2(<0.6),Samples: 10,accuracy: 1.0,avg_conf: 0.473
+Temp: 4.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :11,0: bin0(<0.2),Samples: 99618,accuracy: 0.568,avg_conf: 0.034
+Temp: 4.0,Exit :11,1: bin1(<0.4),Samples: 322,accuracy: 0.981,avg_conf: 0.249
+Temp: 4.0,Exit :11,2: bin2(<0.6),Samples: 25,accuracy: 1.0,avg_conf: 0.457
+Temp: 4.0,Exit :11,3: bin3(<0.8),Samples: 2,accuracy: 1.0,avg_conf: 0.617
+Temp: 4.0,Exit :11,4: bin4(<1.0),Samples: 1,accuracy: 1.0,avg_conf: 0.854
+
+Temp: 4.0,Exit :12,0: bin0(<0.2),Samples: 99764,accuracy: 0.586,avg_conf: 0.035
+Temp: 4.0,Exit :12,1: bin1(<0.4),Samples: 200,accuracy: 0.975,avg_conf: 0.242
+Temp: 4.0,Exit :12,2: bin2(<0.6),Samples: 3,accuracy: 1.0,avg_conf: 0.475
+Temp: 4.0,Exit :12,3: bin3(<0.8),Samples: 1,accuracy: 1.0,avg_conf: 0.744
+Temp: 4.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :13,0: bin0(<0.2),Samples: 99811,accuracy: 0.599,avg_conf: 0.036
+Temp: 4.0,Exit :13,1: bin1(<0.4),Samples: 153,accuracy: 0.987,avg_conf: 0.241
+Temp: 4.0,Exit :13,2: bin2(<0.6),Samples: 3,accuracy: 1.0,avg_conf: 0.418
+Temp: 4.0,Exit :13,3: bin3(<0.8),Samples: 1,accuracy: 1.0,avg_conf: 0.706
+Temp: 4.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :14,0: bin0(<0.2),Samples: 99807,accuracy: 0.607,avg_conf: 0.036
+Temp: 4.0,Exit :14,1: bin1(<0.4),Samples: 160,accuracy: 0.994,avg_conf: 0.24
+Temp: 4.0,Exit :14,2: bin2(<0.6),Samples: 1,accuracy: 1.0,avg_conf: 0.591
+Temp: 4.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 4.0,Exit :15,0: bin0(<0.2),Samples: 98602,accuracy: 0.683,avg_conf: 0.042
+Temp: 4.0,Exit :15,1: bin1(<0.4),Samples: 1180,accuracy: 0.993,avg_conf: 0.26
+Temp: 4.0,Exit :15,2: bin2(<0.6),Samples: 158,accuracy: 1.0,avg_conf: 0.478
+Temp: 4.0,Exit :15,3: bin3(<0.8),Samples: 27,accuracy: 1.0,avg_conf: 0.663
+Temp: 4.0,Exit :15,4: bin4(<1.0),Samples: 1,accuracy: 1.0,avg_conf: 0.816
+
+Temp: 4.0,Exit :16,0: bin0(<0.2),Samples: 99962,accuracy: 0.766,avg_conf: 0.031
+Temp: 4.0,Exit :16,1: bin1(<0.4),Samples: 6,accuracy: 1.0,avg_conf: 0.233
+Temp: 4.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 4.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :0,0: bin0(<0.2),Samples: 99968,accuracy: 0.119,avg_conf: 0.009
+Temp: 5.0,Exit :0,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :1,0: bin0(<0.2),Samples: 99968,accuracy: 0.13,avg_conf: 0.01
+Temp: 5.0,Exit :1,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :2,0: bin0(<0.2),Samples: 99968,accuracy: 0.185,avg_conf: 0.011
+Temp: 5.0,Exit :2,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :3,0: bin0(<0.2),Samples: 99968,accuracy: 0.205,avg_conf: 0.012
+Temp: 5.0,Exit :3,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :4,0: bin0(<0.2),Samples: 99968,accuracy: 0.211,avg_conf: 0.012
+Temp: 5.0,Exit :4,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :5,0: bin0(<0.2),Samples: 99968,accuracy: 0.249,avg_conf: 0.013
+Temp: 5.0,Exit :5,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :6,0: bin0(<0.2),Samples: 99968,accuracy: 0.293,avg_conf: 0.014
+Temp: 5.0,Exit :6,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :7,0: bin0(<0.2),Samples: 99968,accuracy: 0.325,avg_conf: 0.015
+Temp: 5.0,Exit :7,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :8,0: bin0(<0.2),Samples: 99968,accuracy: 0.337,avg_conf: 0.015
+Temp: 5.0,Exit :8,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :9,0: bin0(<0.2),Samples: 99957,accuracy: 0.482,avg_conf: 0.021
+Temp: 5.0,Exit :9,1: bin1(<0.4),Samples: 9,accuracy: 1.0,avg_conf: 0.243
+Temp: 5.0,Exit :9,2: bin2(<0.6),Samples: 2,accuracy: 1.0,avg_conf: 0.417
+Temp: 5.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :10,0: bin0(<0.2),Samples: 99952,accuracy: 0.526,avg_conf: 0.022
+Temp: 5.0,Exit :10,1: bin1(<0.4),Samples: 16,accuracy: 1.0,avg_conf: 0.261
+Temp: 5.0,Exit :10,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :11,0: bin0(<0.2),Samples: 99938,accuracy: 0.569,avg_conf: 0.024
+Temp: 5.0,Exit :11,1: bin1(<0.4),Samples: 29,accuracy: 1.0,avg_conf: 0.24
+Temp: 5.0,Exit :11,2: bin2(<0.6),Samples: 1,accuracy: 1.0,avg_conf: 0.419
+Temp: 5.0,Exit :11,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :11,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :12,0: bin0(<0.2),Samples: 99964,accuracy: 0.587,avg_conf: 0.024
+Temp: 5.0,Exit :12,1: bin1(<0.4),Samples: 4,accuracy: 1.0,avg_conf: 0.222
+Temp: 5.0,Exit :12,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :12,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :13,0: bin0(<0.2),Samples: 99968,accuracy: 0.599,avg_conf: 0.024
+Temp: 5.0,Exit :13,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :13,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :13,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :14,0: bin0(<0.2),Samples: 99967,accuracy: 0.609,avg_conf: 0.025
+Temp: 5.0,Exit :14,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.22
+Temp: 5.0,Exit :14,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :15,0: bin0(<0.2),Samples: 99764,accuracy: 0.687,avg_conf: 0.029
+Temp: 5.0,Exit :15,1: bin1(<0.4),Samples: 193,accuracy: 1.0,avg_conf: 0.256
+Temp: 5.0,Exit :15,2: bin2(<0.6),Samples: 11,accuracy: 1.0,avg_conf: 0.489
+Temp: 5.0,Exit :15,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :15,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 5.0,Exit :16,0: bin0(<0.2),Samples: 99968,accuracy: 0.767,avg_conf: 0.022
+Temp: 5.0,Exit :16,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 5.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :0,0: bin0(<0.2),Samples: 99968,accuracy: 0.122,avg_conf: 0.009
+Temp: 6.0,Exit :0,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :1,0: bin0(<0.2),Samples: 99968,accuracy: 0.13,avg_conf: 0.009
+Temp: 6.0,Exit :1,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :2,0: bin0(<0.2),Samples: 99968,accuracy: 0.185,avg_conf: 0.01
+Temp: 6.0,Exit :2,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :3,0: bin0(<0.2),Samples: 99968,accuracy: 0.204,avg_conf: 0.01
+Temp: 6.0,Exit :3,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :4,0: bin0(<0.2),Samples: 99968,accuracy: 0.211,avg_conf: 0.01
+Temp: 6.0,Exit :4,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :5,0: bin0(<0.2),Samples: 99968,accuracy: 0.247,avg_conf: 0.011
+Temp: 6.0,Exit :5,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :6,0: bin0(<0.2),Samples: 99968,accuracy: 0.293,avg_conf: 0.012
+Temp: 6.0,Exit :6,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :7,0: bin0(<0.2),Samples: 99968,accuracy: 0.324,avg_conf: 0.012
+Temp: 6.0,Exit :7,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :8,0: bin0(<0.2),Samples: 99968,accuracy: 0.337,avg_conf: 0.013
+Temp: 6.0,Exit :8,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :9,0: bin0(<0.2),Samples: 99966,accuracy: 0.483,avg_conf: 0.016
+Temp: 6.0,Exit :9,1: bin1(<0.4),Samples: 2,accuracy: 1.0,avg_conf: 0.254
+Temp: 6.0,Exit :9,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :10,0: bin0(<0.2),Samples: 99967,accuracy: 0.526,avg_conf: 0.017
+Temp: 6.0,Exit :10,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.225
+Temp: 6.0,Exit :10,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :11,0: bin0(<0.2),Samples: 99967,accuracy: 0.57,avg_conf: 0.018
+Temp: 6.0,Exit :11,1: bin1(<0.4),Samples: 1,accuracy: 1.0,avg_conf: 0.27
+Temp: 6.0,Exit :11,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :11,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :11,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :12,0: bin0(<0.2),Samples: 99968,accuracy: 0.588,avg_conf: 0.018
+Temp: 6.0,Exit :12,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :12,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :12,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :13,0: bin0(<0.2),Samples: 99968,accuracy: 0.601,avg_conf: 0.019
+Temp: 6.0,Exit :13,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :13,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :13,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :14,0: bin0(<0.2),Samples: 99968,accuracy: 0.609,avg_conf: 0.019
+Temp: 6.0,Exit :14,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :14,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :15,0: bin0(<0.2),Samples: 99934,accuracy: 0.69,avg_conf: 0.021
+Temp: 6.0,Exit :15,1: bin1(<0.4),Samples: 32,accuracy: 1.0,avg_conf: 0.236
+Temp: 6.0,Exit :15,2: bin2(<0.6),Samples: 2,accuracy: 1.0,avg_conf: 0.507
+Temp: 6.0,Exit :15,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :15,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 6.0,Exit :16,0: bin0(<0.2),Samples: 99968,accuracy: 0.768,avg_conf: 0.017
+Temp: 6.0,Exit :16,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 6.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :0,0: bin0(<0.2),Samples: 99968,accuracy: 0.121,avg_conf: 0.008
+Temp: 7.0,Exit :0,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :1,0: bin0(<0.2),Samples: 99968,accuracy: 0.129,avg_conf: 0.008
+Temp: 7.0,Exit :1,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :2,0: bin0(<0.2),Samples: 99968,accuracy: 0.184,avg_conf: 0.009
+Temp: 7.0,Exit :2,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :3,0: bin0(<0.2),Samples: 99968,accuracy: 0.203,avg_conf: 0.009
+Temp: 7.0,Exit :3,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :4,0: bin0(<0.2),Samples: 99968,accuracy: 0.211,avg_conf: 0.009
+Temp: 7.0,Exit :4,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :5,0: bin0(<0.2),Samples: 99968,accuracy: 0.247,avg_conf: 0.01
+Temp: 7.0,Exit :5,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :6,0: bin0(<0.2),Samples: 99968,accuracy: 0.292,avg_conf: 0.01
+Temp: 7.0,Exit :6,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :7,0: bin0(<0.2),Samples: 99968,accuracy: 0.325,avg_conf: 0.011
+Temp: 7.0,Exit :7,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :8,0: bin0(<0.2),Samples: 99968,accuracy: 0.338,avg_conf: 0.011
+Temp: 7.0,Exit :8,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :9,0: bin0(<0.2),Samples: 99968,accuracy: 0.482,avg_conf: 0.014
+Temp: 7.0,Exit :9,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :9,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :10,0: bin0(<0.2),Samples: 99968,accuracy: 0.526,avg_conf: 0.014
+Temp: 7.0,Exit :10,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :10,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :11,0: bin0(<0.2),Samples: 99968,accuracy: 0.569,avg_conf: 0.015
+Temp: 7.0,Exit :11,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :11,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :11,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :11,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :12,0: bin0(<0.2),Samples: 99968,accuracy: 0.586,avg_conf: 0.015
+Temp: 7.0,Exit :12,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :12,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :12,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :13,0: bin0(<0.2),Samples: 99968,accuracy: 0.6,avg_conf: 0.015
+Temp: 7.0,Exit :13,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :13,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :13,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :14,0: bin0(<0.2),Samples: 99968,accuracy: 0.607,avg_conf: 0.016
+Temp: 7.0,Exit :14,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :14,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :15,0: bin0(<0.2),Samples: 99963,accuracy: 0.687,avg_conf: 0.017
+Temp: 7.0,Exit :15,1: bin1(<0.4),Samples: 5,accuracy: 1.0,avg_conf: 0.232
+Temp: 7.0,Exit :15,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :15,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :15,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 7.0,Exit :16,0: bin0(<0.2),Samples: 99968,accuracy: 0.766,avg_conf: 0.014
+Temp: 7.0,Exit :16,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 7.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :0,0: bin0(<0.2),Samples: 99968,accuracy: 0.12,avg_conf: 0.007
+Temp: 8.0,Exit :0,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :1,0: bin0(<0.2),Samples: 99968,accuracy: 0.13,avg_conf: 0.008
+Temp: 8.0,Exit :1,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :2,0: bin0(<0.2),Samples: 99968,accuracy: 0.185,avg_conf: 0.008
+Temp: 8.0,Exit :2,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :3,0: bin0(<0.2),Samples: 99968,accuracy: 0.205,avg_conf: 0.009
+Temp: 8.0,Exit :3,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :4,0: bin0(<0.2),Samples: 99968,accuracy: 0.212,avg_conf: 0.009
+Temp: 8.0,Exit :4,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :5,0: bin0(<0.2),Samples: 99968,accuracy: 0.249,avg_conf: 0.009
+Temp: 8.0,Exit :5,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :6,0: bin0(<0.2),Samples: 99968,accuracy: 0.295,avg_conf: 0.01
+Temp: 8.0,Exit :6,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :7,0: bin0(<0.2),Samples: 99968,accuracy: 0.326,avg_conf: 0.01
+Temp: 8.0,Exit :7,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :8,0: bin0(<0.2),Samples: 99968,accuracy: 0.339,avg_conf: 0.01
+Temp: 8.0,Exit :8,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :9,0: bin0(<0.2),Samples: 99968,accuracy: 0.482,avg_conf: 0.012
+Temp: 8.0,Exit :9,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :9,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :10,0: bin0(<0.2),Samples: 99968,accuracy: 0.527,avg_conf: 0.013
+Temp: 8.0,Exit :10,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :10,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :11,0: bin0(<0.2),Samples: 99968,accuracy: 0.568,avg_conf: 0.013
+Temp: 8.0,Exit :11,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :11,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :11,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :11,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :12,0: bin0(<0.2),Samples: 99968,accuracy: 0.586,avg_conf: 0.013
+Temp: 8.0,Exit :12,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :12,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :12,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :13,0: bin0(<0.2),Samples: 99968,accuracy: 0.598,avg_conf: 0.013
+Temp: 8.0,Exit :13,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :13,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :13,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :14,0: bin0(<0.2),Samples: 99968,accuracy: 0.607,avg_conf: 0.013
+Temp: 8.0,Exit :14,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :14,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :15,0: bin0(<0.2),Samples: 99968,accuracy: 0.688,avg_conf: 0.015
+Temp: 8.0,Exit :15,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :15,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :15,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :15,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 8.0,Exit :16,0: bin0(<0.2),Samples: 99968,accuracy: 0.766,avg_conf: 0.013
+Temp: 8.0,Exit :16,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 8.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :0,0: bin0(<0.2),Samples: 99968,accuracy: 0.12,avg_conf: 0.007
+Temp: 9.0,Exit :0,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :0,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :0,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :0,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :1,0: bin0(<0.2),Samples: 99968,accuracy: 0.129,avg_conf: 0.007
+Temp: 9.0,Exit :1,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :1,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :1,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :1,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :2,0: bin0(<0.2),Samples: 99968,accuracy: 0.186,avg_conf: 0.008
+Temp: 9.0,Exit :2,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :2,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :2,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :2,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :3,0: bin0(<0.2),Samples: 99968,accuracy: 0.203,avg_conf: 0.008
+Temp: 9.0,Exit :3,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :3,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :3,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :3,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :4,0: bin0(<0.2),Samples: 99968,accuracy: 0.211,avg_conf: 0.008
+Temp: 9.0,Exit :4,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :4,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :4,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :4,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :5,0: bin0(<0.2),Samples: 99968,accuracy: 0.249,avg_conf: 0.008
+Temp: 9.0,Exit :5,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :5,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :5,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :5,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :6,0: bin0(<0.2),Samples: 99968,accuracy: 0.293,avg_conf: 0.009
+Temp: 9.0,Exit :6,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :6,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :6,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :6,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :7,0: bin0(<0.2),Samples: 99968,accuracy: 0.326,avg_conf: 0.009
+Temp: 9.0,Exit :7,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :7,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :7,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :7,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :8,0: bin0(<0.2),Samples: 99968,accuracy: 0.339,avg_conf: 0.009
+Temp: 9.0,Exit :8,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :8,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :8,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :8,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :9,0: bin0(<0.2),Samples: 99968,accuracy: 0.481,avg_conf: 0.011
+Temp: 9.0,Exit :9,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :9,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :9,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :9,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :10,0: bin0(<0.2),Samples: 99968,accuracy: 0.527,avg_conf: 0.011
+Temp: 9.0,Exit :10,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :10,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :10,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :10,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :11,0: bin0(<0.2),Samples: 99968,accuracy: 0.568,avg_conf: 0.012
+Temp: 9.0,Exit :11,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :11,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :11,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :11,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :12,0: bin0(<0.2),Samples: 99968,accuracy: 0.586,avg_conf: 0.012
+Temp: 9.0,Exit :12,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :12,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :12,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :12,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :13,0: bin0(<0.2),Samples: 99968,accuracy: 0.599,avg_conf: 0.012
+Temp: 9.0,Exit :13,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :13,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :13,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :13,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :14,0: bin0(<0.2),Samples: 99968,accuracy: 0.607,avg_conf: 0.012
+Temp: 9.0,Exit :14,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :14,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :14,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :14,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :15,0: bin0(<0.2),Samples: 99968,accuracy: 0.686,avg_conf: 0.013
+Temp: 9.0,Exit :15,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :15,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :15,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :15,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
+Temp: 9.0,Exit :16,0: bin0(<0.2),Samples: 99968,accuracy: 0.766,avg_conf: 0.011
+Temp: 9.0,Exit :16,1: bin1(<0.4),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :16,2: bin2(<0.6),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :16,3: bin3(<0.8),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+Temp: 9.0,Exit :16,4: bin4(<1.0),Samples: 0,accuracy: 0.0,avg_conf: 0.0
+
