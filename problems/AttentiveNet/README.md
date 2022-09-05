@@ -31,4 +31,5 @@ To visualize how predictions are distributed over entropy scores use the followi
 python dataset_entropy_analysis/plot_entropy_accuracy.py --dataset cifar10 --n_bins 4 --category val --save_lists
 ```
 
-To evaluate the exit architectures, download the pretrained weights from [this link](https://drive.google.com/drive/folders/1YKvht2ROO6gjlTHmlE-pf65A4X1q3W0m?usp=sharing) and put it in *problems/AttentiveNet/*
+
+To evaluate the exit architectures, download the pretrained weights from [this link](https://drive.google.com/drive/folders/1YKvht2ROO6gjlTHmlE-pf65A4X1q3W0m?usp=sharing) and put them in *problems/AttentiveNet/saved_models*
