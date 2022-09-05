@@ -1,4 +1,4 @@
-# Towards Energy-efficient Dynamic Hardware-aware Neural Architecture Search with DVFS
+# Towards Energy-efficient Hardware-aware Dynamic Neural Architecture Search with DVFS
 
 ## Overview
 
