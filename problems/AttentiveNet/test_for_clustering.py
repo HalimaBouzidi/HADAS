@@ -89,5 +89,3 @@ if __name__ == '__main__':
         writer.writerow(header)
         for row in rows:
             writer.writerow(row)
-
-
