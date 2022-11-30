@@ -57,14 +57,7 @@ results/{exp-name}/{seed}
 
 
 
-## References
+## Acknowledgements
 
-```
-@inproceedings{wang2021attentivenas,
-  title={Attentivenas: Improving neural architecture search via attentive sampling},
-  author={Wang, Dilin and Li, Meng and Gong, Chengyue and Chandra, Vikas},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={6418--6427},
-  year={2021}
-}
-```
+[AttentiveNAS](https://github.com/facebookresearch/AttentiveNAS)
+[AlphaNet](https://github.com/facebookresearch/AlphaNet)
