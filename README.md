@@ -1,9 +1,8 @@
-# Towards Energy-efficient Hardware-aware Dynamic Neural Architecture Search with DVFS
+# HADAS: Hardware-Aware Dynamic Neural Architecture Search for Edge Performance Scaling
 
 ## Overview
 
-This repository contains Python implementation of the algorithm framework for Hardware-aware Dynamic Neural Architecture Search with DVFS. The framework is built upon 
-- DGEMO: Framework for Multi-objective Bayesian Optimization.
+This repository contains theb Python implementation of HADAS Framework for Hardware-aware Dynamic Neural Architecture Search. The framework is built upon 
 - Pymoo: Framework for Multi-objective Evolutionary Optimization.
 
 
@@ -11,40 +10,28 @@ This repository contains Python implementation of the algorithm framework for Ha
 
 ```
 baselines/ --- MOO baseline algorithms: NSGA-II
-mobo/
- ├── solver/ --- multi-objective solvers
- ├── surrogate_model/ --- surrogate models
- ├── acquisition.py --- acquisition functions
+optim/
+ ├── solver/ --- multi-objective solver
  ├── algorithms.py --- high-level algorithm specifications
  ├── factory.py --- factory for importing different algorithm components
- ├── mobo.py --- main pipeline of multi-objective bayesian optimziation
- ├── selection.py --- selection methods for new samples
- ├── surrogate_problem.py --- multi-objective surrogate problem
- ├── transformation.py --- normalizations on data
+ ├── selection.py --- selection methods for new populations
  └── utils.py --- utility functions
 problems/ --- Hardware-aware NAS problem definition and evaluation
 scripts/ --- scripts to run experiments
 visualization/ --- performance visualization
-main.py --- main execution file for MOBO algorithms
+main.py --- main execution file for HADAS optimization algorithm
 ```
 
 ## Requirements
 
 - Python version: tested in Python 3.8.10
-
 - Install the software environment in the yaml file *environment.yml*
-
-- Install pygco by pip (which is used by the bayesian optimization DGEMO):
-
-  ```
-  pip install pygco
-  ```
 
 ## Getting Started
 
 - Download the pre-trained supernet of AttentiveNAS from [this link](https://drive.google.com/file/d/1cCla-OQNIAn-rjsY2b832DuP59ZKr8uh/view?usp=sharing) and put it in *problems/AttentiveNet/attentive_nas_data/*
 
-- Run the script file *script.sh*. The script can run the HW-NAS with one of the optimization algorithms (NSGA-II, DGEMO, USEMO-EI)
+- Run the script file *script.sh*. The script can run the optimization process for OOE+IOE or IOE for selected backbones
 
 
 ## Result
@@ -52,16 +39,15 @@ main.py --- main execution file for MOBO algorithms
 - The optimization results are saved in csv format and the arguments are saved as a yaml file. They are stored under the folder:
 
 ```
-result/{problem}/{subfolder}/{algo}-{exp-name}/{seed}/
+results/{exp-name}/{seed}
 ```
 
-*Explanation --- problem: problem name, algo: algorithm name, exp-name: experiment name, seed: random seed used*
+*Explanation --- optim-level: optimization-level, backbone: backbone name, exp-name: experiment name, seed: random seed used*
 
 - The name of the argument yaml file is `args.yml`.
 
 
 ## Fine-tuning:
-    
     
 | Subnet/weights | Cifar10 | Cifar-100 | Tiny-Imagenet | MFLOPs |
 |:---:|:---:|:---:|:---:|:---:|
@@ -72,16 +58,6 @@ result/{problem}/{subfolder}/{algo}-{exp-name}/{seed}/
 
 
 ## References
-
-```
-@article{konakovic2020diversity,
-  title={Diversity-Guided Multi-Objective Bayesian Optimization With Batch Evaluations},
-  author={Konakovic Lukovic, Mina and Tian, Yunsheng and Matusik, Wojciech},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
-  year={2020}
-}
-```
 
 ```
 @inproceedings{wang2021attentivenas,
