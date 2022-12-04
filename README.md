@@ -16,7 +16,11 @@ search_algo/
  ├── hadas_search.py --- OOE + IOE search algorithms (evolutionary-based)
  ├── utils_opt.py --- Selection functions for the optimization algorithms (based on non-dominated sorting and crowding distance)
  └── utils_eval.py --- utility functions to remotely run the evaluation and read/write results
-Supernet/
+supernet/
+ ├── AttentiveNAS/ --- Contains the original scripts from AttentiveNAS for supernet specifications + our scripts to transform backbones to dynamic neural networks with multiple exits
+ ├── utils/ --- Contains essential scripts to manage distributed training/evaluation over multiple GPUs
+ ├── parellel_evaluation_exits.py --- Main script to train, evaluate multi-exits backbones in parallel
+ └── parellel_evaluation_nas.py --- Main script to evaluate backbone accuracy in parallel
 ```
 
 ## Requirements
