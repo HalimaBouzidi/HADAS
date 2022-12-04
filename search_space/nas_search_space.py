@@ -112,18 +112,6 @@ class NASSearchSpace:
 
         return arch
 
-    def encode_to_x(self, config):
-
-        expand = list(np.array(config[4].split('_')).astype(int))
-        expand_ = [expand[1], expand[2], expand[3], expand[4]]
-
-        return {'resolution': int(config[0]), 
-                'width': list(np.array(config[1].split('_')).astype(int)), 
-                'depth': list(np.array(config[2].split('_')).astype(int)), 
-                'kernel_size': list(np.array(config[3].split('_')).astype(int)), 
-                'expand_ratio': expand_,
-                }
-
 if __name__ == '__main__':
 
     nas_search_space = NASSearchSpace()
