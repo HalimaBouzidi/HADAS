@@ -2,10 +2,10 @@ arch: 'attentive_nas_dynamic_model'
 exp_name: "parallel_supernet_evo_search"
 
 # The pretrained supernet path, e.g.,
-supernet_checkpoint_path: "./supernet/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
-resume: "./supernet/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+supernet_checkpoint_path: "./supernet/AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+resume: "./supernet/AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
 
-evo_search:
+evo_search_outer:
     parent_popu_size: 64
     survival_ratio: .15
     mutate_size: 32
@@ -28,14 +28,14 @@ n_gpu_per_node: 8
 data_loader_workers_per_gpu: 4
 num_nodes: 8
 n_cpu_per_node: 32
-gpu_type: 'GPU_V100_HOST'
-memory_per_node: '128g'
+gpu_type: 'GPU_Tesla_P100'
+memory_per_node: '16g'
 
 ### distributed settings ###
-distributed: True
+distributed: False
 distributed_val: False
 multiprocessing_distributed: True
-dist_backend: 'gloo'
+dist_backend: 'nccl'
 eval_only: True
 
 ### CIFAR100 dataset ###

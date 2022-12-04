@@ -12,7 +12,7 @@ from utils_eval import remote_eval_nas_err, remote_eval_nas_hw, read_results_nas
                        remote_eval_dvfs, remote_eval_exits, read_eex_scores, read_results_dvfs
 
 parser = argparse.ArgumentParser(description='Run the optimization framework of HADAS for optimal DyNNs')
-parser.add_argument('--config-file', default='./config.yml')
+parser.add_argument('--config-file', default='./config_evo.yml')
 run_args = parser.parse_args()
 
 def inner_optimization_engine(backbone, args):
@@ -79,11 +79,11 @@ def outer_optimization_engine(gpu, args):
            
     ## Population initialization
     ss_nas = NASSearchSpace()
-    parent_popu_outer = ss_nas.initialize_all(args.evo_search_inner.parent_popu_size)
+    parent_popu_outer = ss_nas.initialize_all(args.evo_search_outer.parent_popu_size)
 
     ## Run the evolutionary search for the outer optimization engine (OOE)
     pareto_outer = {}
-    for evo in range(args.evo_search.evo_iter):   
+    for evo in range(args.evo_search_outer.evo_iter):   
         
         thread1 = threading.Thread(target = remote_eval_nas_err, args=(parent_popu_outer, ))
         thread2 = threading.Thread(target = remote_eval_nas_hw, args=(parent_popu_outer, ))
@@ -122,16 +122,16 @@ def outer_optimization_engine(gpu, args):
         parent_popu_outer = []
 
         ## Crossover
-        for _ in range(args.evo_search.crossover_size):
+        for _ in range(args.evo_search_outer.crossover_size):
             cfg1 = random.choice(list(pareto_outer.values()))
             cfg2 = random.choice(list(pareto_outer.values()))
-            cfg = supernet.module.crossover_and_reset(cfg1, cfg2)
+            cfg = supernet.module.crossover_and_reset(cfg1, cfg2, prob=args.evo_search_outer.crossover_prob)
             parent_popu_outer.append(cfg)
         
         ## Mutation
-        for _ in range(args.evo_search.mutate_size):          
+        for _ in range(args.evo_search_outer.mutate_size):          
             old_cfg = random.choice(list(pareto_outer.values()))
-            cfg = supernet.module.mutate_and_reset(old_cfg, prob=args.evo_search.mutate_prob)
+            cfg = supernet.module.mutate_and_reset(old_cfg, prob=args.evo_search_outer.mutate_prob)
             parent_popu_outer.append(cfg)   
     
 

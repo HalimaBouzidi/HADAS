@@ -1,74 +1,42 @@
 arch: 'attentive_nas_dynamic_model'
-exp_name: "parallel_supernet_evo_search"
 
-# your pretrained supernet path, e.g.,
-supernet_checkpoint_path: "/home/hbouzidi/hbouzidi/hw_dynamic_nas/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
-resume: "/home/hbouzidi/hbouzidi/hw_dynamic_nas/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+# Path to the pretrained supernet, e.g.,
+supernet_checkpoint_path: "AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+resume: "AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
 
-# settings for BN calibration
-batch_size_per_gpu: 64
-post_bn_calibration_batch_num: 64
-augment: "auto_augment_tf"
-
-evo_search:
-    parent_popu_size: 20
-    mutate_size: 10
-    crossover_size: 10
-    mutate_prob: 0.2
-    evo_iter: 10
-
-bn_momentum: 0.1
-bn_eps: 1e-5
-
-# just in case you have more GPUs
-n_gpu_per_node: 8
+# Just in case you have more GPUs
+n_gpu_per_node: 2
 data_loader_workers_per_gpu: 4
-num_nodes: 8
+num_nodes: 16
 n_cpu_per_node: 32
-gpu_type: 'GPU_V100_HOST'
-memory_per_node: '128g'
+gpu_type: 'GPU_Tesla_P100'
+memory_per_node: '16g'
 
-### distributed settings ###
-distributed: True
+### Distributed settings ###
+distributed: False ## We use model-parallelism instead of data-parallelism so we turn-off the data distribution setting
 distributed_val: False
 multiprocessing_distributed: True
 dist_backend: 'nccl'
 eval_only: True
 
-### imagenet dataset ###
+### CIFAR100 dataset ###
 dataset: 'cifar-100'
-dataset_dir: "/home/hbouzidi/hbouzidi/datasets/cifar-100"
+dataset_dir: "datasets/cifar-100"
 n_classes: 100
 drop_last: True
-seed: 0
 
 ### Exit training parameters ###
 
-exit_threshold: 0.6
 batch_size_per_gpu: 64
-
 augment: "auto_augment_tf"
-
-distributed: False
-
 warmup_epochs: 5
 epochs: 30
 start_epoch: 0
 
-#sync-batchnormalization, suggested to use in bignas
-sync_bn: False
-
-bn_momentum: 0
-bn_eps: 1e-5
-
-post_bn_calibration_batch_num: 64
-
-data_loader_workers_per_gpu: 4
-
 weight_decay_weight: 0.00001
 weight_decay_bn_bias: 0.
 
-loss: "kl-div"
+loss: "kl-div" ## Loss function for exits training
 
 optimizer:
     method: sgd
@@ -80,10 +48,18 @@ lr_scheduler:
     base_lr: 0.01
     clamp_lr_percent: 0.0
 
+# Sync-batchnormalization, suggested to use in BigNAS paper
+sync_bn: False
+bn_momentum: 0
+bn_eps: 1e-5
+augment: "auto_augment_tf"
+post_bn_calibration_batch_num: 64
+data_loader_workers_per_gpu: 4
+
 print_freq: 200
 seed: 0
 
-#attentive nas search space
+# AttentiveNAS search space (supernet configurations)
 # c: channels, d: layers, k: kernel size, t: expand ratio, s: stride, act: activation, se: se layer
 supernet_config:
     use_v3_head: True
