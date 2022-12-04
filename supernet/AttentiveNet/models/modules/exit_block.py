@@ -3,8 +3,10 @@ from .nn_utils import build_activation
 
 class ExitBlock(nn.Module):
 
-    def __init__(self, in_features, num_classes, conv_features=448):
+    def __init__(self, in_features, num_classes, conv_features=224):
         super(ExitBlock, self).__init__()
+
+        # Use the in_features for the controller
 
         self.conv = nn.Conv2d(in_features, conv_features, 3, stride=1, bias=False)
 
@@ -18,8 +20,10 @@ class ExitBlock(nn.Module):
             nn.Linear(conv_features, 1),
             nn.Sigmoid(),
         )
+
         self.classifier = nn.Sequential(
             nn.Linear(conv_features , num_classes),
+            #nn.Softmax(dim=1),
         )
 
     def forward(self, x):

@@ -133,3 +133,6 @@ class AttentiveNasEExModel(MyNetwork):
                 m.training = True
                 m.momentum = None # cumulative moving average
                 m.reset_running_stats()
+
+
+

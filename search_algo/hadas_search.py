@@ -74,7 +74,7 @@ def outer_optimization_engine(gpu, args):
     torch.cuda.set_device(args.gpu)
 
     ## Create the supernet for backbones sampling
-    model = models.model_factory.create_model(args)
+    supernet = models.model_factory.create_model(args)
     model.cuda(args.gpu)
            
     ## Population initialization
@@ -122,18 +122,16 @@ def outer_optimization_engine(gpu, args):
         parent_popu_outer = []
 
         ## Crossover
-        for idx in range(args.evo_search.crossover_size):
+        for _ in range(args.evo_search.crossover_size):
             cfg1 = random.choice(list(pareto_outer.values()))
             cfg2 = random.choice(list(pareto_outer.values()))
-            cfg = model.module.crossover_and_reset(cfg1, cfg2)
-            cfg['net_id'] = f'net_{idx % args.world_size}_evo_{evo}_crossover_{idx}'
+            cfg = supernet.module.crossover_and_reset(cfg1, cfg2)
             parent_popu_outer.append(cfg)
         
         ## Mutation
-        for idx in range(args.evo_search.mutate_size):          
+        for _ in range(args.evo_search.mutate_size):          
             old_cfg = random.choice(list(pareto_outer.values()))
-            cfg = model.module.mutate_and_reset(old_cfg, prob=args.evo_search.mutate_prob)
-            cfg['net_id'] = f'net_{idx % args.world_size}_evo_{evo}_mutate_{idx}'
+            cfg = supernet.module.mutate_and_reset(old_cfg, prob=args.evo_search.mutate_prob)
             parent_popu_outer.append(cfg)   
     
 

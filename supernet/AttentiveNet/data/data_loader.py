@@ -4,14 +4,16 @@ from __future__ import print_function
 
 import torch
 import torchvision.transforms.functional as F
-from torchvision import transforms#, datasets
-from torchvision.datasets import CIFAR10, CIFAR100, ImageFolder#, INDEXEDCIFAR10, INDEXEDCIFAR100
-from typing import Any, Callable, cast, Dict, List, Optional, Tuple
+from torchvision import datasets, transforms
+from torchvision.datasets import CIFAR10, CIFAR100, ImageFolder
 from torch.utils.data import Dataset
 import math
 import sys
 import random
 from PIL import Image
+import pandas as pd
+
+from typing import Any, Callable, cast, Dict, List, Optional, Tuple
 
 from torch.utils.data.distributed import DistributedSampler
 import os
@@ -136,11 +138,12 @@ def build_data_loader(args):
         return build_default_imagenet_data_loader(args)
     elif args.dataset == 'tiny-imagenet':
         return build_default_tiny_imagenet_data_loader(args)
-    elif args.dataset == 'CIFAR10':
+    elif args.dataset == 'cifar-10':
         return build_default_CIFAR10_data_loader(args)
-    elif args.dataset == 'CIFAR100':
+    elif args.dataset == 'cifar-100':
         return build_default_CIFAR100_data_loader(args)
     else:
+        print(args.dataset)
         raise NotImplementedError
     
 def build_default_imagenet_data_loader(args):
@@ -155,19 +158,7 @@ def build_default_imagenet_data_loader(args):
     if not getattr(args, 'data_loader_cross_validation', False):
         train_dataset = datasets.ImageFolder(traindir, train_transform)
         val_dataset = datasets.ImageFolder(valdir, test_transform)
-
-        # train_dataset = datasets.NamedImageFolder(traindir, train_transform)
-        # val_dataset = datasets.NamedImageFolder(valdir, val_transform)
-        
-    #else:
-    #    my_dataset = datasets.ImageFolder(traindir)
-    #    train_dataset, val_dataset = torch.utils.data.random_split(
-    #        my_dataset, [args.data_split_ntrain, args.data_split_nval], generator=torch.Generator().manual_seed(args.data_split_seed)
-    #    )
-    #    train_dataset = MyDataset( train_dataset, train_transform)
-    #    val_dataset = MyDataset(val_dataset, test_transform)
-
-
+   
     #build data loaders
     
     if args.distributed:
@@ -206,16 +197,45 @@ def build_default_imagenet_data_loader(args):
     return train_loader, val_loader, train_sampler
 
 def build_default_tiny_imagenet_data_loader(args):
-    # need to make it to understand the image id with the classification confidence
     traindir = os.path.join(args.dataset_dir, "train")
-    valdir = os.path.join(args.dataset_dir, "val")      
+    valdir = os.path.join(args.dataset_dir, "val")
 
+    val_data = pd.read_csv(f'{valdir}/val_annotations.txt', sep='\t', header=None, names=['File', 'Class', 'X', 'Y', 'H', 'W'])
+    val_img_dir = os.path.join(valdir, 'images')
+    fp = open(os.path.join(valdir, 'val_annotations.txt'), 'r')
+    data = fp.readlines()
+    val_img_dict = {}
+    for line in data:
+        words = line.split('\t')
+        val_img_dict[words[0]] = words[1]
+    fp.close()
+
+    for img, folder in val_img_dict.items():
+        newpath = (os.path.join(val_img_dir, folder))
+        if not os.path.exists(newpath):
+            os.makedirs(newpath)
+        if os.path.exists(os.path.join(val_img_dir, img)):
+            os.rename(os.path.join(val_img_dir, img), os.path.join(newpath, img))
+
+    # Save class names (for corresponding labels) as dict from words.txt file
+    class_to_name_dict = dict()
+    fp = open(os.path.join(args.dataset_dir, 'words.txt'), 'r')
+    data = fp.readlines()
+    for line in data:
+        words = line.strip('\n').split('\t')
+        class_to_name_dict[words[0]] = words[1].split(',')[0]
+    fp.close()
+
+    #build transforms
     train_transform = get_data_transform(args, is_training=True, augment=args.augment)
     test_transform = get_data_transform(args, is_training=False, augment=args.augment)
 
-    train_dataset = NamedImageFolder(traindir, train_transform)
-    val_dataset = NamedImageFolder(valdir, test_transform)
+    #build datasets
+    if not getattr(args, 'data_loader_cross_validation', False):
+        train_dataset = NamedImageFolder(traindir, train_transform)
+        val_dataset = NamedImageFolder(val_img_dir, test_transform)
 
+    #build data loaders
     if args.distributed:
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset)
     else:
@@ -224,20 +244,20 @@ def build_default_tiny_imagenet_data_loader(args):
     train_loader = torch.utils.data.DataLoader(
         train_dataset,
         batch_size=args.batch_size,
-        shuffle=(train_sampler is None),        # edit
+        shuffle=(train_sampler is None),
         sampler=train_sampler,
         drop_last = getattr(args, 'drop_last', True),
         num_workers=args.data_loader_workers_per_gpu,
         pin_memory=True,
-    )    
+    )
 
     if args.distributed and getattr(args, 'distributed_val', True):
         val_sampler = torch.utils.data.distributed.DistributedSampler(val_dataset)
     else:
-        val_sampler = None  
-        
+        val_sampler = None
+
     eval_batch_size = min(args.batch_size, 16) \
-        if not getattr(args, 'eval_only', False) else args.batch_size  
+        if not getattr(args, 'eval_only', False) else args.batch_size
 
     val_loader = torch.utils.data.DataLoader(
         val_dataset,
@@ -249,7 +269,7 @@ def build_default_tiny_imagenet_data_loader(args):
         sampler=val_sampler,
     )
 
-    return train_loader, val_loader, train_sampler 
+    return train_loader, val_loader, train_sampler
 
 def build_default_CIFAR10_data_loader(args):
 

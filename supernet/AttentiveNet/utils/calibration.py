@@ -1,4 +1,4 @@
-# Generalized Class for confiednece calibration with Calibration-related fns for exits
+# Class for confiednece calibration with Calibration-related fns
 # bin is the bin number, bin_data is a nested list containing the true class labels and the associated confidences for each prediction
 # TODO: MAKE SURE INPUT AND OUTPUT DATA PASSED ON TO THE CALIBRATE FUNCTION ARE FROM THE DATALOADER CALL IN VALIDATE
 # I can do it like the imagenet eval where I keep passing on batches, and the class keeps on updating
@@ -34,8 +34,8 @@ class temp_estimator():
         with torch.no_grad():
             for batch_idx, (images, targets, path) in enumerate(self.dataloader):
                 # 'path' for CIFAR datasets is the index
-                images = images.cuda(0, non_blocking=True)
-                targets = targets.cuda(0, non_blocking=True)   # class number directly (not one hot vector)
+                images = images.cuda(self.args.gpu, non_blocking=True)
+                targets = targets.cuda(self.args.gpu, non_blocking=True)   # class number directly (not one hot vector)
                 self.total_samples += len(images)
                 if self.n_exits > 1:
                     outputs, _, _ = self.model(images)        # probabilities (#samples*#classes)
@@ -159,7 +159,7 @@ class temp_estimator():
                 ECE += bin_weight*diff
                 rows.append(["Temp: "+str(temp), "Exit :" +str(j), str(i)+": "+str(bin_key), "Samples: "+str(len(bin_dict[bin_key]['bin_conf'])), \
                         "accuracy: "+str(bin_acc), "avg_conf: "+str(bin_conf)])        
-                #print(f"Exit : {j}, {i}: {bin_key}, Samples: {len(bin_dict[bin_key]['bin_conf'])}, accuracy: {bin_acc}, avg_conf: {bin_conf}")
+                print(f"Exit : {j}, {i}: {bin_key}, Samples: {len(bin_dict[bin_key]['bin_conf'])}, accuracy: {bin_acc}, avg_conf: {bin_conf}")
             rows.append([])
         
         with open(rep+'dataset_analysis/temp_calibration/'+self.args.dataset+'/'+self.args.model+'_bins_data.csv', 'a') as f:

@@ -71,10 +71,6 @@ def accuracy(output, target, topk=(1,), per_sample=False):
         else:
             return res
 
-def dissim(vector1, vector2):
-    """Dissimalrity scores between 1D vectors -- to be used for entropy difference scoring""" 
-    return 1 - torch.dot(vector1, vector2)
-
 def entropy(output):
     """Estimates entropy of classification for each batch"""
     with torch.no_grad():
