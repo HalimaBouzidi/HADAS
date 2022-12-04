@@ -5,13 +5,13 @@ import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
 
-from utils.factory import read_eex_population, save_eex_evaluation
 from utils.config import setup
+from utils.factory import read_eex_population, save_eex_evaluation
 import utils.comm as comm
 
-from AttentiveNet import models
-from AttentiveNet.data.data_loader import build_data_loader
-from AttentiveNet import train_exit_blocks as eval_exit
+from AttentiveNAS import models
+from AttentiveNAS.data.data_loader import build_data_loader
+from AttentiveNAS import train_exit_blocks as eval_exit
 
 parser = argparse.ArgumentParser(description='Train and Evaluate Dynamic Neural Networks with early-exiting')
 parser.add_argument('--config-file', default='./config.yml')
