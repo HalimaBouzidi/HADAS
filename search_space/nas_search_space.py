@@ -1,11 +1,6 @@
-from mimetypes import init
-from tracemalloc import start
 import numpy as np
-from numpy.core.defchararray import decode
-from torchinfo import summary
-import re
 
-class SearchSpace:
+class NASSearchSpace:
     def __init__(self):
 
         self.num_blocks = 7  # number of blocks (fixed by the macro-architecture)
@@ -21,7 +16,7 @@ class SearchSpace:
         self.kernel_size = [3, 5] 
         self.exp_ratio = [4, 5, 6]
 
-    def bounds_arch(self, n_var=28):
+    def bounds_genome(self, n_var=28):
         lb = np.zeros(n_var, dtype = object)
         ub = np.zeros(n_var, dtype = object)
 
@@ -128,4 +123,18 @@ class SearchSpace:
                 'kernel_size': list(np.array(config[3].split('_')).astype(int)), 
                 'expand_ratio': expand_,
                 }
+
+if __name__ == '__main__':
+
+    nas_search_space = NASSearchSpace()
+    rows = []
+    init_ = nas_search_space.initialize_all(10)
+    print(init_[3])
+    
+    encode_ = nas_search_space.encode_all(init_[3])
+    print(encode_)
+
+    decod_ = nas_search_space.decode_all(encode_)
+    print(decod_)
+    
 

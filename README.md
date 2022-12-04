@@ -3,23 +3,20 @@
 ## Overview
 
 This repository contains the Python implementation of HADAS Framework for Hardware-aware Dynamic Neural Architecture Search. The framework is built upon 
+- AttentiveNAS: Framwork for Neural Architecture Search
 - Pymoo: Framework for Multi-objective Evolutionary Optimization.
-
 
 ## Code Structure
 
 ```
-baselines/ --- MOO baseline algorithms: NSGA-II
-optim/
- ├── solver/ --- multi-objective solver
- ├── algorithms.py --- high-level algorithm specifications
- ├── factory.py --- factory for importing different algorithm components
- ├── selection.py --- selection methods for new populations
- └── utils.py --- utility functions
-problems/ --- Hardware-aware NAS problem definition and evaluation
-scripts/ --- scripts to run experiments
-visualization/ --- performance visualization
-main.py --- main execution file for HADAS optimization algorithm
+search_space/
+ ├── nas_search_space.py --- Search space definition for the NAS process (OOE)
+ └── eex_dvfs_search_space --- Search space definition for EEx_DVFS (IOE)
+search_algo/
+ ├── hadas_search.py --- OOE + IOE search algorithms (evolutionary-based)
+ ├── utils_opt.py --- Selection functions for the optimization algorithms (based on non-dominated sorting and crowding distance)
+ └── utils_eval.py --- utility functions to remotely run the evaluation and read/write results
+Supernet/
 ```
 
 ## Requirements
@@ -29,25 +26,12 @@ main.py --- main execution file for HADAS optimization algorithm
 
 ## Getting Started
 
-- Download the pre-trained supernet of AttentiveNAS from [this link](https://drive.google.com/file/d/1cCla-OQNIAn-rjsY2b832DuP59ZKr8uh/view?usp=sharing) and put it in *problems/AttentiveNet/attentive_nas_data/*
+- Download one of our pre-trained supernets of AttentiveNAS and put it in *supernet/AttentiveNet/attentive_nas_data/*
 
-- Run the script file *script.sh*. The script can run the optimization process for OOE+IOE or IOE for selected backbones
-
-
-## Result
-
-- The optimization results are saved in csv format and the arguments are saved as a yaml file. They are stored under the folder:
-
-```
-results/{exp-name}/{seed}
-```
-
-*Explanation --- optim-level: optimization-level, backbone: backbone name, exp-name: experiment name, seed: random seed used*
-
-- The name of the argument yaml file is `args.yml`.
+- Run the script file *script.sh*. The script can run the optimization process for OOE+IOE or IOE for a selected backbone(s)
 
 
-## Fine-tuning:
+## Pretrained AttentiveNAS supernets on multiple datasets:
     
 | Subnet/weights | Cifar10 | Cifar-100 | Tiny-Imagenet | MFLOPs |
 |:---:|:---:|:---:|:---:|:---:|
@@ -59,7 +43,6 @@ results/{exp-name}/{seed}
 
 ## Acknowledgements
 
+[Pymoo](https://github.com/anyoptimization/pymoo)
 [AttentiveNAS](https://github.com/facebookresearch/AttentiveNAS)
-
-[AlphaNet](https://github.com/facebookresearch/AlphaNet)
 

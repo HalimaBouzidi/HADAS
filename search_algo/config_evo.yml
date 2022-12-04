@@ -1,0 +1,122 @@
+arch: 'attentive_nas_dynamic_model'
+exp_name: "parallel_supernet_evo_search"
+
+# The pretrained supernet path, e.g.,
+supernet_checkpoint_path: "./Supernet/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+resume: "./Supernet/AttentiveNet/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+
+evo_search:
+    parent_popu_size: 64
+    survival_ratio: .15
+    mutate_size: 32
+    crossover_size: 32
+    mutate_prob: 0.3
+    crossover_prob: 0.8
+    evo_iter: 7
+
+evo_search_inner:
+    parent_popu_size: 10
+    survival_ratio: .25
+    mutate_size: 5
+    crossover_size: 5
+    mutate_prob: 0.3
+    crossover_prob: 0.8
+    evo_iter: 5
+
+# just in case you have more GPUs
+n_gpu_per_node: 8
+data_loader_workers_per_gpu: 4
+num_nodes: 8
+n_cpu_per_node: 32
+gpu_type: 'GPU_V100_HOST'
+memory_per_node: '128g'
+
+### distributed settings ###
+distributed: True
+distributed_val: False
+multiprocessing_distributed: True
+dist_backend: 'gloo'
+eval_only: True
+
+### CIFAR100 dataset ###
+dataset: 'cifar-100'
+dataset_dir: "./datasets/cifar-100"
+n_classes: 100
+drop_last: True
+
+#sync-batch normalization, suggested to use in bignas
+sync_bn: False
+bn_momentum: 0
+bn_eps: 1e-5
+augment: "auto_augment_tf"
+post_bn_calibration_batch_num: 64
+data_loader_workers_per_gpu: 4
+
+# Attentive supernet configuration (for supernet loading)
+# c: channels, d: layers, k: kernel size, t: expand ratio, s: stride, act: activation, se: se layer
+supernet_config:
+    use_v3_head: True
+    resolutions: [192, 224, 256, 288]
+    first_conv: 
+        c: [16, 24]
+        act_func: 'swish'
+        s: 2
+    mb1:
+        c: [16, 24]
+        d: [1, 2]
+        k: [3, 5]
+        t: [1]
+        s: 1
+        act_func: 'swish'
+        se: False
+    mb2:
+        c: [24, 32]
+        d: [3, 4, 5]
+        k: [3, 5]
+        t: [4, 5, 6]
+        s: 2
+        act_func: 'swish'
+        se: False
+    mb3:
+        c: [32, 40] 
+        d: [3, 4, 5, 6]
+        k: [3, 5]
+        t: [4, 5, 6]
+        s: 2
+        act_func: 'swish'
+        se: True
+    mb4:
+        c: [64, 72] 
+        d: [3, 4, 5, 6]
+        k: [3, 5]
+        t: [4, 5, 6]
+        s: 2
+        act_func: 'swish'
+        se: False
+    mb5:
+        c: [112, 120, 128] 
+        d: [3, 4, 5, 6, 7, 8]
+        k: [3, 5]
+        t: [4, 5, 6]
+        s: 1
+        act_func: 'swish'
+        se: True
+    mb6:
+        c: [192, 200, 208, 216] 
+        d: [3, 4, 5, 6, 7, 8]
+        k: [3, 5]
+        t: [6]
+        s: 2
+        act_func: 'swish'
+        se: True
+    mb7:
+        c: [216, 224] 
+        d: [1, 2]
+        k: [3, 5]
+        t: [6]
+        s: 1
+        act_func: 'swish'
+        se: True
+    last_conv:
+        c: [1792, 1984]
+        act_func: 'swish'
