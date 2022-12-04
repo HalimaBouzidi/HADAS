@@ -13,7 +13,6 @@ from utils_eval import remote_eval_nas_err, remote_eval_nas_hw, read_results_nas
 
 parser = argparse.ArgumentParser(description='Run the optimization framework of HADAS for optimal DyNNs')
 parser.add_argument('--config-file', default='./config.yml')
-parser.add_argument('--seed', default=1, type=int, help='default random seed')
 run_args = parser.parse_args()
 
 def inner_optimization_engine(backbone, args):
