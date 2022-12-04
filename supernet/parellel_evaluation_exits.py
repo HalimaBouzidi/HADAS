@@ -9,9 +9,9 @@ from utils.config import setup
 from utils.factory import read_eex_population, save_eex_evaluation
 import utils.comm as comm
 
-from AttentiveNAS import models
-from AttentiveNAS.data.data_loader import build_data_loader
-from AttentiveNAS import train_exit_blocks as eval_exit
+from AttentiveNas import models
+from AttentiveNas.data.data_loader import build_data_loader
+from AttentiveNas import train_exit_blocks as eval_exit
 
 parser = argparse.ArgumentParser(description='Train and Evaluate Dynamic Neural Networks with early-exiting')
 parser.add_argument('--config-file', default='./config.yml')

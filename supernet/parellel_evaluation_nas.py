@@ -9,9 +9,9 @@ from utils.config import setup
 from utils.factory import read_nas_population, save_nas_evaluation
 import utils.comm as comm
 
-from AttentiveNAS import models
-from AttentiveNAS.data.data_loader import build_data_loader
-from AttentiveNAS.evaluate import attentive_nas_eval as attentive_nas_eval
+from AttentiveNas import models
+from AttentiveNas.data.data_loader import build_data_loader
+from AttentiveNas.evaluate import attentive_nas_eval as attentive_nas_eval
 
 parser = argparse.ArgumentParser(description='Evaluate Backbone Neural Networks from AttentiveNAS supernet')
 parser.add_argument('--config-file', default='./config.yml')

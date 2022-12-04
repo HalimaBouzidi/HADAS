@@ -1,8 +1,8 @@
 arch: 'attentive_nas_dynamic_model'
 
 # Path to the pretrained supernet, e.g.,
-supernet_checkpoint_path: "AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
-resume: "AttentiveNAS/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+supernet_checkpoint_path: "AttentiveNas/attentive_nas_data/attentive_nas_cifar100.pth.tar"
+resume: "AttentiveNas/attentive_nas_data/attentive_nas_cifar100.pth.tar"
 
 # Just in case you have more GPUs
 n_gpu_per_node: 2
