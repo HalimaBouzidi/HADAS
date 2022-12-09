@@ -3,7 +3,7 @@
 ## Overview
 
 This repository contains the Python implementation of HADAS Framework for Hardware-aware Dynamic Neural Architecture Search. The framework is built upon:
-- AttentiveNAS: Framweork for Neural Architecture Search
+- AttentiveNAS: Framework for Neural Architecture Search
 - Pymoo: Framework for Multi-objective Evolutionary Optimization.
 
 For more details, please refer to our paper [HADAS: Hardware-Aware Dynamic Neural Architecture Search for Edge Performance Scaling](http://arxiv.org/abs/2212.03354) by Halima Bouzidi, Mohanad Odema, Hamza Ouarnouhgi, Mohammad Abdullah Al-Faruque, and Smail Niar.
