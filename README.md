@@ -11,10 +11,10 @@ For more details, please refer to our paper [HADAS: Hardware-Aware Dynamic Neura
 If you find this implementation helpful, please consider citing our work:
 
 ```BibTex
-@article{????,
+@article{bouzidi2022hadas,
   title={HADAS: Hardware-Aware Dynamic Neural Architecture Search for Edge Performance Scaling},
-  author={Halima, Bouzidi and Mohanad, Odema and Hamza, Ouarnouhgi and Mohammad, Abdullah Al-Faruque and Smail, Niar},
-  journal={arXiv preprint arXiv:????},
+  author={Bouzidi, Halima and Odema, Mohanad and Ouarnoughi, Hamza and Al Faruque, Mohammad Abdullah and Niar, Smail},
+  journal={arXiv preprint arXiv:2212.03354},
   year={2022}
 }
 ```
@@ -40,15 +40,6 @@ supernet/
 
 - Python version: tested in Python 3.8.10
 - Install the software environment in the yaml file *environment.yml*
-
-## Getting Started
-
-- Download one of our pre-trained supernets of AttentiveNAS and put it in *supernet/AttentiveNet/attentive_nas_data/*
-
-- Run the script file *script.sh*. The script can run the optimization process for OOE+IOE or IOE for a selected backbone(s)
-
-
-## Evaluation
 
 ## Pretrained AttentiveNAS supernets on multiple datasets:
     
