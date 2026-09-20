@@ -1,3 +1,5 @@
+
+
 [![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 [![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
@@ -28,7 +30,7 @@ If you find this implementation helpful, please consider citing our work:
 ```
 search_space/
  ├── nas_search_space.py --- Search space definition for the NAS process (OOE)
- └── eex_dvfs_search_space --- Search space definition for EEx_DVFS (IOE)
+ └── eex_dvfs_search_space.py --- Search space definition for EEx_DVFS (IOE)
 search_algo/
  ├── hadas_search.py --- OOE + IOE search algorithms (evolutionary-based)
  ├── utils_opt.py --- Selection functions for the optimization algorithms (based on non-dominated sorting and crowding distance)
@@ -60,4 +62,3 @@ supernet/
 [Pymoo](https://github.com/anyoptimization/pymoo)
 
 [AttentiveNAS](https://github.com/facebookresearch/AttentiveNAS)
-
